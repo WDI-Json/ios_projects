@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21305B927D1EEED00AA79AA /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21305B827D1EEED00AA79AA /* ListViewModel.swift */; };
 		D2A9803B27CBC7C80054241A /* TodolistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A9803A27CBC7C80054241A /* TodolistApp.swift */; };
 		D2A9803F27CBC7C90054241A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A9803E27CBC7C90054241A /* Assets.xcassets */; };
 		D2A9804227CBC7C90054241A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A9804127CBC7C90054241A /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D21305B827D1EEED00AA79AA /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		D2A9803727CBC7C80054241A /* Todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A9803A27CBC7C80054241A /* TodolistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodolistApp.swift; sourceTree = "<group>"; };
 		D2A9803E27CBC7C90054241A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D21305B727D1EBF300AA79AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D21305B827D1EEED00AA79AA /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D2A9802E27CBC7C80054241A = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 			children = (
 				D2A9803A27CBC7C80054241A /* TodolistApp.swift */,
 				D2A9804827CBC90D0054241A /* Views */,
+				D21305B727D1EBF300AA79AA /* ViewModel */,
 				D2A9804F27CBD5D90054241A /* Models */,
 				D2A9803E27CBC7C90054241A /* Assets.xcassets */,
 				D2A9804027CBC7C90054241A /* Preview Content */,
@@ -164,6 +175,7 @@
 			files = (
 				D2A9805127CBD6630054241A /* ItemModel.swift in Sources */,
 				D2A9804E27CBCF190054241A /* AddView.swift in Sources */,
+				D21305B927D1EEED00AA79AA /* ListViewModel.swift in Sources */,
 				D2A9803B27CBC7C80054241A /* TodolistApp.swift in Sources */,
 				D2A9804A27CBC9370054241A /* ListView.swift in Sources */,
 				D2A9804C27CBCB240054241A /* ListRowView.swift in Sources */,
@@ -297,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Todolist/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL4KR75454;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -325,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Todolist/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL4KR75454;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
