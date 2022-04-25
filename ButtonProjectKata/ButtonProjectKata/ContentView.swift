@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         if infoShow {
-            Text("Hiya Redmar")
+            Text("Hiya Pap!")
                 .fontWeight(.bold)
                 .font(.title)
                 .padding()
@@ -23,7 +23,7 @@ struct ContentView: View {
                 .border(Color.red, width: 5)
         }
         
-        Button("button mayne") {
+        Button("Press me!") {
             infoShow.toggle()
         }
         .padding()
