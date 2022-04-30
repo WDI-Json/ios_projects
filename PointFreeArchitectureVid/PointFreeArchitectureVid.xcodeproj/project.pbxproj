@@ -11,6 +11,8 @@
 		D2BB02BB281D2F320003CB2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB02BA281D2F320003CB2A /* ContentView.swift */; };
 		D2BB02BD281D2F320003CB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BB02BC281D2F320003CB2A /* Assets.xcassets */; };
 		D2BB02C0281D2F320003CB2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BB02BF281D2F320003CB2A /* Preview Assets.xcassets */; };
+		D2BB02C7281D3B880003CB2A /* clsAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB02C6281D3B870003CB2A /* clsAppState.swift */; };
+		D2BB02CB281D3BC70003CB2A /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB02CA281D3BC70003CB2A /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D2BB02BA281D2F320003CB2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2BB02BC281D2F320003CB2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2BB02BF281D2F320003CB2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2BB02C6281D3B870003CB2A /* clsAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clsAppState.swift; sourceTree = "<group>"; };
+		D2BB02CA281D3BC70003CB2A /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				D2BB02B8281D2F320003CB2A /* PointFreeArchitectureVidApp.swift */,
 				D2BB02BA281D2F320003CB2A /* ContentView.swift */,
+				D2BB02CA281D3BC70003CB2A /* CounterView.swift */,
+				D2BB02C6281D3B870003CB2A /* clsAppState.swift */,
 				D2BB02BC281D2F320003CB2A /* Assets.xcassets */,
 				D2BB02BE281D2F320003CB2A /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				D2BB02BB281D2F320003CB2A /* ContentView.swift in Sources */,
 				D2BB02B9281D2F320003CB2A /* PointFreeArchitectureVidApp.swift in Sources */,
+				D2BB02C7281D3B880003CB2A /* clsAppState.swift in Sources */,
+				D2BB02CB281D3BC70003CB2A /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
