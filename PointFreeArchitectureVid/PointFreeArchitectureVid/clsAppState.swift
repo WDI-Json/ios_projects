@@ -9,4 +9,6 @@ import Combine
 
 class AppState: ObservableObject{
     @Published var count: Int = 0
+    @Published var favoritePrimes: [Int] = []
+    //@Published var $alertNthPrime
 }

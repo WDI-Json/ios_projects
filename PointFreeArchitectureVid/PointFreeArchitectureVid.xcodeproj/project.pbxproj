@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D29BEB20281D896800D9507A /* WolframApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29BEB1F281D896800D9507A /* WolframApiKey.swift */; };
 		D2BB02B9281D2F320003CB2A /* PointFreeArchitectureVidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB02B8281D2F320003CB2A /* PointFreeArchitectureVidApp.swift */; };
 		D2BB02BB281D2F320003CB2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BB02BA281D2F320003CB2A /* ContentView.swift */; };
 		D2BB02BD281D2F320003CB2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BB02BC281D2F320003CB2A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D29BEB1F281D896800D9507A /* WolframApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframApiKey.swift; sourceTree = "<group>"; };
 		D2BB02B5281D2F320003CB2A /* PointFreeArchitectureVid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointFreeArchitectureVid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BB02B8281D2F320003CB2A /* PointFreeArchitectureVidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointFreeArchitectureVidApp.swift; sourceTree = "<group>"; };
 		D2BB02BA281D2F320003CB2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				D2BB02B8281D2F320003CB2A /* PointFreeArchitectureVidApp.swift */,
 				D2BB02BA281D2F320003CB2A /* ContentView.swift */,
 				D2BB02CA281D3BC70003CB2A /* CounterView.swift */,
+				D29BEB1F281D896800D9507A /* WolframApiKey.swift */,
 				D2BB02C6281D3B870003CB2A /* clsAppState.swift */,
 				D2BB02BC281D2F320003CB2A /* Assets.xcassets */,
 				D2BB02BE281D2F320003CB2A /* Preview Content */,
@@ -146,6 +149,7 @@
 				D2BB02BB281D2F320003CB2A /* ContentView.swift in Sources */,
 				D2BB02B9281D2F320003CB2A /* PointFreeArchitectureVidApp.swift in Sources */,
 				D2BB02C7281D3B880003CB2A /* clsAppState.swift in Sources */,
+				D29BEB20281D896800D9507A /* WolframApiKey.swift in Sources */,
 				D2BB02CB281D3BC70003CB2A /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
