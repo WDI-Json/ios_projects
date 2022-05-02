@@ -14,71 +14,57 @@ private func ordinal(_ n: Int) -> String {
 }
 
 struct CounterView: View {
-    @StateObject var state : AppState
-    @State var isPrimeModalShown: Bool = false
-    
-    var body: some View {
-        VStack{
-            HStack{
-                Button(action: {
-                    self.state.count -= 1
-                })
-                {Text("-")}
-                Text("\(self.state.count)")
-                Button(action: {
-                    self.state.count += 1})
-                {Text("+")}
-            }
-            
-            Button(action: {self.isPrimeModalShown = true}){
-                Text("Is this prime?")
-            }
-            Button(action: {}) {
-                Text("What's the \(ordinal(self.state.count)) prime?")
-            }
+  @ObservedObject var state: AppState
+  @State var isPrimeModalShown: Bool = false
+  @State var alertNthPrime: PrimeAlert?
+  @State var isNthPrimeButtonDisabled = false
+
+  var body: some View {
+    VStack {
+      HStack {
+        Button(action: { self.state.count -= 1 }) {
+          Text("-")
         }
-        .font(.title)
-        .navigationTitle("CounterDemo")
-        .sheet(isPresented: self.$isPrimeModalShown) {
-            IsPrimeModalView(state: self.state)
+        Text("\(self.state.count)")
+        Button(action: { self.state.count += 1 }) {
+          Text("+")
         }
-        .alert(item: self.$alertNthPrime) { alert in
-          Alert(
-            title: Text("The \(ordinal(self.state.count)) prime is \(alert.prime)"),
-            dismissButton: .default(Text("Ok"))
-          )
+      }
+      Button(action: { self.isPrimeModalShown = true }) {
+        Text("Is this prime?")
+      }
+      Button(action: self.nthPrimeButtonAction) {
+        Text("What is the \(ordinal(self.state.count)) prime?")
+      }
+      .disabled(self.isNthPrimeButtonDisabled)
     }
+    .font(.title)
+    .navigationBarTitle("Counter demo")
+    .sheet(isPresented: self.$isPrimeModalShown) {
+      IsPrimeModalView(state: self.state)
+    }
+    .alert(item: self.$alertNthPrime) { alert in
+      Alert(
+        title: Text("The \(ordinal(self.state.count)) prime is \(alert.prime)"),
+        dismissButton: .default(Text("Ok"))
+      )
+    }
+  }
+    /*view helper methods*/
+    func nthPrimeButtonAction() {
+       self.isNthPrimeButtonDisabled = true
+       nthPrime(self.state.count) { prime in
+         self.alertNthPrime = prime.map(PrimeAlert.init(prime:))
+         self.isNthPrimeButtonDisabled = false
+       }
+     }
 }
 
-private func isPrime (_ p: Int) -> Bool {
-    if p <= 1 { return false }
-    if p <= 3 { return true }
-    for i in 2...Int(sqrtf(Float(p))) {
-        if p % i == 0 { return false }
-    }
-    return true
-}
 
-struct IsPrimeModalView: View {
-    @StateObject var state: AppState
+struct PrimeAlert: Identifiable {
+    let prime: Int
     
-    var body: some View {
-        if isPrime(self.state.count) {
-            Text("\(self.state.count) is prime 🎉")
-            if self.state.favoritePrimes.contains(self.state.count) {
-                Button(action: {self.state.favoritePrimes.removeAll(where: {$0 == self.state.count}) }) {
-                    Text("Remove from favorite primes")
-                }
-            } else {
-                Button(action: {self.state.favoritePrimes.append(self.state.count)}) {
-                    Text("Save to favorite primes")
-                }
-            }
-        }
-        else {
-            Text("\(self.state.count) is not prime :(")
-        }
-    }
+    var id: Int { self.prime }
 }
 
 struct WolframAlphaResult: Decodable {
@@ -115,8 +101,8 @@ func wolframAlpha(query: String, callback: @escaping (WolframAlphaResult?) -> Vo
     }
     .resume()
 }
-
-
+    
+    
 func nthPrime(_ n: Int, callback: @escaping (Int?) -> Void) -> Void {
     wolframAlpha(query: "prime \(n)") { result in
         callback(
@@ -133,8 +119,8 @@ func nthPrime(_ n: Int, callback: @escaping (Int?) -> Void) -> Void {
         )
     }
 }
-
-
+    
+    
 struct CounterView_Previews: PreviewProvider {
     static var previews: some View {
         CounterView(state: AppState())
