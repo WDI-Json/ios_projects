@@ -7,54 +7,52 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     
-   enum TabItems: Int {
-       case editor, notes, share, settings
-   }
+
     
-   @State private var selectedTab = TabItems.editor.rawValue
     @StateObject var state: AppState
     
     var body: some View {
-        
-        TabView(selection: $selectedTab) {
+        TabView(selection: $state.selectedTab) {
             CounterView(state: self.state)
                 .tabItem {
                     Image(systemName: "phone.fill")
                     Text("First Tab")
-                }.tag(TabItems.editor.rawValue)
+                }.tag(TabItems.editor)
             
-            SomeSecondView()
+            SomeSecondView(selectedTab: $state.selectedTab)
                 .tabItem {
                     Image(systemName: "tv.fill")
                     Text("Second Tab")
-                }.tag(TabItems.editor.rawValue)
+                }.tag(TabItems.notes)
             
             TodoView()
                 .tabItem {
                     Label("To-Do", systemImage: "list.bullet")
                     Text("To-Do")
-                }.tag(TabItems.editor.rawValue)
+                }.tag(TabItems.share)
             
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape")
                     Text("Settings")
-                }.tag(TabItems.editor.rawValue)
+                }.tag(TabItems.settings)
             
             ShareView()
                 .tabItem {
                     Label("Share", systemImage: "square.and.arrow.up")
                     Text("Share")
-                }.tag(TabItems.editor.rawValue)
+                }.tag(TabItems.editor)
             
             PrivateNotesView()
                 .tabItem {
                     Label("Private", systemImage: "lock.doc")
                     Text("Private")
-                }.tag(TabItems.editor.rawValue)
+                }.tag(TabItems.editor)
         }
+        
     }
 }
 struct ShareView: View{
@@ -80,12 +78,17 @@ struct HelloWorldView: View{
 }
 
 struct SomeSecondView: View{
+    @Binding var selectedTab: TabItems
+    
     var body: some View {
         NavigationView {
             List{
                 Text("item")
                 Text("item")
                 Text("item")
+                Button("goto settings tab!") {
+                    selectedTab = TabItems.settings
+                }
                 Text("item")
                 Text("item")
             }
