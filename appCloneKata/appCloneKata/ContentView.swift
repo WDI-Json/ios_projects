@@ -64,7 +64,25 @@ struct ContentView: View {
     }
 }
 
-
+struct toolbarConcent: ToolbarContent{
+    @State var currentTab: Int = 0
+    var body: some ToolbarContent {
+        ToolbarItemGroup(placement: .navigationBarLeading) {
+            Button(action: {
+                withAnimation {
+                    self.currentTab = 0
+                }
+                print("Hij werkt")
+            })
+            {
+                Text("doe iets")
+                    .bold()
+                    .font(Font.system(size: 13, design: .monospaced))
+                    .underline()
+            }
+        }
+    }
+}
 struct HelloWorldView1: View{
     var body: some View{
         Text("Hello, Sir!")
