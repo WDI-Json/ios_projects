@@ -58,12 +58,10 @@ struct ContentView: View {
                         Label("Edit", systemImage: "gearshape.fill")
                     }
                 }
-                
             }
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
