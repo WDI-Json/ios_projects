@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView(selection: self.$currentTab) {
+                
                 view1().tag(0)
                 view2().tag(1)
                 view3().tag(2)
