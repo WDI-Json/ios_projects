@@ -18,23 +18,20 @@ struct view1: View {
     }
     
     var body: some View {
-                HStack {
-                    Text("""
-                         Uw locatie
-                         \(userLatitude)N
-                         \(userLongitude)E
-                         nauwkeurigheid
-                         23 meter
-                         """)
-                    .bold()
-                    .multilineTextAlignment(.center)
-                }
-        .padding(150)
-        RedPillButton()
-        LabelledDivider(label: "of")
         VStack{
+            Text("""
+             Uw locatie
+             \(userLatitude)N
+             \(userLongitude)E
+             nauwkeurigheid
+             23 meter
+             """)
+            .bold()
+            .multilineTextAlignment(.center)
+            .padding(125)
+            RedPillButton()
+            LabelledDivider(label: "of")
             HStack{
-                
                 RedCircleButton()
                     .padding()
                 RedCircleButton()
