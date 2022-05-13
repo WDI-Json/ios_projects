@@ -17,6 +17,7 @@ struct ContentView: View {
                 view1().tag(0)
                 view2().tag(1)
                 view3().tag(2)
+                PulseAnimation().tag(3)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .edgesIgnoringSafeArea(.all)
