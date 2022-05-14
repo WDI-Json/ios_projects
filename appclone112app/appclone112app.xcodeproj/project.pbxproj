@@ -14,6 +14,7 @@
 		D24FAE5F282FEB8C007AE717 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE5E282FEB8C007AE717 /* ChatView.swift */; };
 		D24FAE61282FEE33007AE717 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE60282FEE33007AE717 /* KeyboardResponder.swift */; };
 		D24FAE63282FEE55007AE717 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE62282FEE55007AE717 /* ViewExtension.swift */; };
+		D24FAE65282FEF70007AE717 /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE64282FEF70007AE717 /* ChatHelper.swift */; };
 		D2AFA042282ED8A40080F39F /* locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA041282ED8A40080F39F /* locationmanager.swift */; };
 		D2AFA044282EF12F0080F39F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */; };
 		D2AFA046282EFA470080F39F /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA045282EFA470080F39F /* PulseAnimation.swift */; };
@@ -35,6 +36,7 @@
 		D24FAE5E282FEB8C007AE717 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		D24FAE60282FEE33007AE717 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		D24FAE62282FEE55007AE717 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		D24FAE64282FEF70007AE717 /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
 		D2AFA041282ED8A40080F39F /* locationmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationmanager.swift; sourceTree = "<group>"; };
 		D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../.Trash/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D2AFA045282EFA470080F39F /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				D24FAE53282FE685007AE717 /* Model */,
 				D24FAE60282FEE33007AE717 /* KeyboardResponder.swift */,
 				D24FAE62282FEE55007AE717 /* ViewExtension.swift */,
+				D24FAE64282FEF70007AE717 /* ChatHelper.swift */,
 			);
 			path = ChatFiles;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				D24FAE61282FEE33007AE717 /* KeyboardResponder.swift in Sources */,
 				D2B022F3282CF8E100A762A6 /* appclone112appApp.swift in Sources */,
 				D2B02303282CFE8B00A762A6 /* MainView.swift in Sources */,
+				D24FAE65282FEF70007AE717 /* ChatHelper.swift in Sources */,
 				D2AFA042282ED8A40080F39F /* locationmanager.swift in Sources */,
 				D2B02305282CFE9900A762A6 /* InstructionView.swift in Sources */,
 				D2AFA046282EFA470080F39F /* PulseAnimation.swift in Sources */,
