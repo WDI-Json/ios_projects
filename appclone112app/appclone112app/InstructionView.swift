@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct view2: View {
+struct InstructionView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Image("image")
@@ -15,8 +15,8 @@ struct view2: View {
                     .frame(height: 200)
             Text("Communiceer via de chat")
                 .bold()
-                .padding(40)
-                .font(Font.system(size: 30, design: .default))
+                .padding(30)
+                .font(Font.system(size: 20, design: .default))
             HStack{
                 numberView(1)
                     .padding(.horizontal)
@@ -49,6 +49,6 @@ func numberView(_ number: Int) -> some View {
 
 struct view2_Previews: PreviewProvider {
     static var previews: some View {
-        view2()
+        InstructionView()
     }
 }

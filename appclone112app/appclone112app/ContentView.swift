@@ -14,10 +14,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView(selection: self.$currentTab) {
-                view1().tag(0)
-                view2().tag(1)
+                MainView().tag(0)
+                InstructionView().tag(1)
                 view3().tag(2)
-                PulseAnimation().tag(3)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .edgesIgnoringSafeArea(.all)
@@ -49,6 +48,9 @@ struct ContentView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: {
+                        withAnimation{
+                            self.currentTab = 2
+                        }
                         print("Refresh?")
                     }) {
                         Label("Refresh", systemImage: "info.circle.fill")

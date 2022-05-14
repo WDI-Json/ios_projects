@@ -8,27 +8,31 @@
 import SwiftUI
 
 struct PulseAnimation: View {
-
+    
     var state = 1
-
+    
     func colourToShow() -> Color {
         return Color.blue
     }
-
+    
     @State var animate = false
     var body: some View {
         VStack {
             ZStack {
-                Circle().stroke(colourToShow().opacity(0.55)).frame(width: 250, height: 250).scaleEffect(self.animate ? 1 : 0)
-                Circle().stroke(colourToShow().opacity(0.75)).frame(width: 220, height: 220).scaleEffect(self.animate ? 1 : 0)
-                Circle().stroke(colourToShow().opacity(0.9)).frame(width: 160, height: 160).scaleEffect(self.animate ? 1 : 0)
-//                Circle().stroke(colourToShow()).frame(width: 6.25, height: 6.25)
+                Circle().stroke(colourToShow().opacity(0.35)).frame(width: 250, height: 250).scaleEffect(self.animate ? 1 : 0)
+                Circle().fill(colourToShow().opacity(0.03)).frame(width: 250, height: 250).scaleEffect(self.animate ? 1 : 0)
+                Circle().stroke(colourToShow().opacity(0.15)).frame(width: 200, height: 200).scaleEffect(self.animate ? 1 : 0)
+                Circle().stroke(colourToShow().opacity(0.06)).frame(width: 160, height: 160).scaleEffect(self.animate ? 1 : 0)
+                    .onAppear {
+                        withAnimation(.easeIn(duration: 3.0).repeatForever(autoreverses:true)) {
+                            self.animate.toggle()
+                            
+                        }
+                    }
+                }
             }
-            .onAppear { self.animate.toggle() }
-            .animation(Animation.easeInOut(duration: 4.5).repeatForever(autoreverses: true))
         }
     }
-}
 
 struct PulseAnimation_Previews: PreviewProvider {
     static var previews: some View {

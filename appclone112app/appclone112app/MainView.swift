@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct view1: View {
+struct MainView: View {
     @StateObject var locationManager = LocationManager()
     var userLatitude: String {
         return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
@@ -19,6 +19,8 @@ struct view1: View {
     
     var body: some View {
         VStack{
+            ZStack{
+            PulseAnimation()
             Text("""
              Uw locatie
              \(userLatitude)N
@@ -29,6 +31,7 @@ struct view1: View {
             .bold()
             .multilineTextAlignment(.center)
             .padding(125)
+            }
             RedPillButton()
             LabelledDivider(label: "of")
             HStack{
@@ -55,6 +58,6 @@ struct view1: View {
 
 struct view1_Previews: PreviewProvider {
     static var previews: some View {
-        view1()
+        MainView()
     }
 }
