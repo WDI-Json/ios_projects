@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D22A1B0F282E3D3E00101D96 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A1B0E282E3D3E00101D96 /* LabelledDivider.swift */; };
-		D24FAE55282FE693007AE717 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE54282FE693007AE717 /* Chat.swift */; };
-		D24FAE59282FE6D2007AE717 /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE58282FE6D2007AE717 /* ContentMessageView.swift */; };
-		D24FAE5B282FE726007AE717 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE5A282FE726007AE717 /* MessageView.swift */; };
-		D24FAE5F282FEB8C007AE717 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE5E282FEB8C007AE717 /* ChatView.swift */; };
-		D24FAE61282FEE33007AE717 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE60282FEE33007AE717 /* KeyboardResponder.swift */; };
-		D24FAE63282FEE55007AE717 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE62282FEE55007AE717 /* ViewExtension.swift */; };
-		D24FAE65282FEF70007AE717 /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FAE64282FEF70007AE717 /* ChatHelper.swift */; };
 		D2AFA042282ED8A40080F39F /* locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA041282ED8A40080F39F /* locationmanager.swift */; };
 		D2AFA044282EF12F0080F39F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */; };
 		D2AFA046282EFA470080F39F /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA045282EFA470080F39F /* PulseAnimation.swift */; };
@@ -30,13 +23,6 @@
 
 /* Begin PBXFileReference section */
 		D22A1B0E282E3D3E00101D96 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
-		D24FAE54282FE693007AE717 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		D24FAE58282FE6D2007AE717 /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
-		D24FAE5A282FE726007AE717 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		D24FAE5E282FEB8C007AE717 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		D24FAE60282FEE33007AE717 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
-		D24FAE62282FEE55007AE717 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		D24FAE64282FEF70007AE717 /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
 		D2AFA041282ED8A40080F39F /* locationmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationmanager.swift; sourceTree = "<group>"; };
 		D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../.Trash/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D2AFA045282EFA470080F39F /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -62,44 +48,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D24FAE52282FE673007AE717 /* ChatFiles */ = {
-			isa = PBXGroup;
-			children = (
-				D24FAE57282FE6BA007AE717 /* View */,
-				D24FAE56282FE6A1007AE717 /* Controller */,
-				D24FAE53282FE685007AE717 /* Model */,
-				D24FAE60282FEE33007AE717 /* KeyboardResponder.swift */,
-				D24FAE62282FEE55007AE717 /* ViewExtension.swift */,
-				D24FAE64282FEF70007AE717 /* ChatHelper.swift */,
-			);
-			path = ChatFiles;
-			sourceTree = "<group>";
-		};
-		D24FAE53282FE685007AE717 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D24FAE54282FE693007AE717 /* Chat.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D24FAE56282FE6A1007AE717 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D24FAE57282FE6BA007AE717 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D24FAE58282FE6D2007AE717 /* ContentMessageView.swift */,
-				D24FAE5A282FE726007AE717 /* MessageView.swift */,
-				D24FAE5E282FEB8C007AE717 /* ChatView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		D2B022E6282CF8E100A762A6 = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +76,6 @@
 				D2B02308282CFF1700A762A6 /* ButtonViews.swift */,
 				D2B02304282CFE9900A762A6 /* InstructionView.swift */,
 				D2B02306282CFEA200A762A6 /* ChatView.swift */,
-				D24FAE52282FE673007AE717 /* ChatFiles */,
 				D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */,
 				D2B022F6282CF8E200A762A6 /* Assets.xcassets */,
 				D2B022F8282CF8E200A762A6 /* Preview Content */,
@@ -215,18 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24FAE5B282FE726007AE717 /* MessageView.swift in Sources */,
-				D24FAE59282FE6D2007AE717 /* ContentMessageView.swift in Sources */,
 				D2B022F5282CF8E100A762A6 /* ContentView.swift in Sources */,
-				D24FAE5F282FEB8C007AE717 /* ChatView.swift in Sources */,
 				D2B02307282CFEA200A762A6 /* ChatView.swift in Sources */,
-				D24FAE63282FEE55007AE717 /* ViewExtension.swift in Sources */,
 				D2B02309282CFF1700A762A6 /* ButtonViews.swift in Sources */,
-				D24FAE55282FE693007AE717 /* Chat.swift in Sources */,
-				D24FAE61282FEE33007AE717 /* KeyboardResponder.swift in Sources */,
 				D2B022F3282CF8E100A762A6 /* appclone112appApp.swift in Sources */,
 				D2B02303282CFE8B00A762A6 /* MainView.swift in Sources */,
-				D24FAE65282FEF70007AE717 /* ChatHelper.swift in Sources */,
 				D2AFA042282ED8A40080F39F /* locationmanager.swift in Sources */,
 				D2B02305282CFE9900A762A6 /* InstructionView.swift in Sources */,
 				D2AFA046282EFA470080F39F /* PulseAnimation.swift in Sources */,
