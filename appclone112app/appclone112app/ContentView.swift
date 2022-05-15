@@ -29,10 +29,13 @@ struct ContentView: View {
                         }
                         print("deze tabknopt doet iets")
                     }) {
-                        Text("BELLEN")
-                            .bold()
-                            .font(Font.system(size: 13, design: .monospaced))
-                            .underline()
+                        if self.currentTab == 0 {
+                            UnderlinedTextCall("BELLEN")
+                        } else
+                        {      Text("BELLEN")
+                                .bold()
+                                .font(Font.system(size: 13, design: .monospaced))
+                        }
                     }
                     Button(action: {
                         withAnimation {
@@ -40,10 +43,13 @@ struct ContentView: View {
                         }
                         print("refresh werkt ook")
                     }) {
-                        Text("CHAT")
-                            .bold()
-                            .font(Font.system(size:13, design: .monospaced))
-                            .underline()
+                        if self.currentTab == 1 {
+                            UnderlinedTextCall("CHAT")
+                        } else
+                        {      Text("CHAT")
+                                .bold()
+                                .font(Font.system(size: 13, design: .monospaced))
+                        }
                     }
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {

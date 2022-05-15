@@ -41,35 +41,20 @@ func RedCircleButton(_ imagename: String ) -> some View {
     .shadow(radius: 5)
 }
 
-
-//struct RedCircleButton: View {
-//    var body: some View {
-//        Button(action:{}){
-//            Image(systemName: "phone.fill")
-//        }
-//        .padding()
-//        .foregroundColor(Color.white)
-//        .background(Color(red: 1.0, green: 0, blue: 0))
-//        .clipShape(Circle())
-//        .shadow(radius: 5)
-//    }
-//}
-
-struct UnderlinedTextCall: View {
-    var body: some View {
-        Group {
-            Text("BELLEN")
-                .font(Font.system(size: 13, design: .default))
-                .bold()
-                .foregroundColor(.blue)
-                .font(.body)
-                .padding([.top, .bottom], 6)
-                .overlay(Rectangle()
-                    .frame(height: 3)
-                    .foregroundColor(.blue),
-                         alignment: .bottom
-                )
-        }
+@ViewBuilder
+func  UnderlinedTextCall(_ text: String) -> some View {
+    Group {
+        Text(text)
+            .font(Font.system(size: 13, design: .default))
+            .bold()
+            .foregroundColor(.blue)
+            .font(.body)
+            .padding([.top, .bottom], 6)
+            .overlay(Rectangle()
+                .frame(height: 3)
+                .foregroundColor(.blue),
+                     alignment: .bottom
+            )
     }
 }
 
@@ -93,7 +78,7 @@ struct ButtonViews_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
             .padding()
         
-        UnderlinedTextCall()
+        UnderlinedTextCall("BELLEN!")
             .frame(width: 50, height: 50)
             .previewLayout(.sizeThatFits)
             .padding()
