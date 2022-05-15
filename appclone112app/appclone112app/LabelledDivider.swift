@@ -14,7 +14,7 @@ struct LabelledDivider: View {
     let horizontalPadding: CGFloat
     let color: Color
 
-    init(label: String, horizontalPadding: CGFloat = 20, color: Color = .gray) {
+    init(label: String, horizontalPadding: CGFloat = 20, color: Color = .black) {
         self.label = label
         self.horizontalPadding = horizontalPadding
         self.color = color
@@ -24,12 +24,13 @@ struct LabelledDivider: View {
         HStack {
             line
             Text(label).foregroundColor(color)
+                .bold()
             line
         }
     }
 
     var line: some View {
-        VStack { Divider().background(color) }.padding(horizontalPadding)
+        VStack { Divider().background(.gray) }.padding(horizontalPadding)
     }
 }
 

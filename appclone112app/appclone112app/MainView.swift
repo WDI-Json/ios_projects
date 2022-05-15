@@ -35,19 +35,33 @@ struct MainView: View {
             RedPillButton()
             LabelledDivider(label: "of")
             HStack{
-                RedCircleButton()
+                RedCircleButton("politie")
                     .padding()
-                RedCircleButton()
+                RedCircleButton("ambulance")
                     .padding()
-                RedCircleButton()
+                RedCircleButton("brandweer")
                     .padding()
             }
-            HStack{Text("Politie")
-                    .padding(.horizontal)
-                    .multilineTextAlignment(.center)
-                Text("Brandweer")
-                    .padding(.horizontal)
-                Text("Ambulance")
+            HStack{
+                VStack{
+                    Text("Bel 112")
+                    Text("Politie")
+                        .bold()
+                        .padding(.horizontal)
+                        .multilineTextAlignment(.center)
+                }
+                .multilineTextAlignment(.center)
+                VStack{
+                    Text("Bel 112")
+                    Text("Ambulance")
+                        .bold()
+                        .padding(.horizontal)
+                }.multilineTextAlignment(.center)
+                VStack{
+                    Text("Bel 112")
+                    Text("Brandweer")
+                        .bold()
+                }.multilineTextAlignment(.center)
             }
         }
     }
