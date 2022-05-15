@@ -20,6 +20,7 @@ struct MainView: View {
     var body: some View {
         VStack{
             ZStack{
+                //TO DO: pulseanimation + text als parameterinput meegeven. Dus 1 call met geolocs
             PulseAnimation()
             Text("""
              Uw locatie
