@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		D22A1B0E282E3D3E00101D96 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
 		D2AFA041282ED8A40080F39F /* locationmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationmanager.swift; sourceTree = "<group>"; };
-		D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../../../../.Trash/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D2AFA045282EFA470080F39F /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		D2B022EF282CF8E100A762A6 /* appclone112app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appclone112app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B022F2282CF8E100A762A6 /* appclone112appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appclone112appApp.swift; sourceTree = "<group>"; };
