@@ -48,7 +48,7 @@ func  UnderlinedTextCall(_ text: String) -> some View {
             .font(Font.system(size: 13, design: .default))
             .bold()
             .foregroundColor(.blue)
-            .font(.body)
+//            .font(.body)
             .padding([.top, .bottom], 6)
             .overlay(Rectangle()
                 .frame(height: 3)

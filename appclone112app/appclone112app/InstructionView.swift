@@ -40,10 +40,13 @@ struct InstructionView: View {
 func numberView(_ number: Int) -> some View {
     let number: String = String(number)
     Text(number)
+        .bold()
+        .font(Font.system(size: 20, design: .default))
         .padding()
         .foregroundColor(.white)
         .background(.blue)
         .clipShape(Circle())
+        
 }
 
 

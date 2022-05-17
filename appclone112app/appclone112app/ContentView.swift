@@ -35,6 +35,7 @@ struct ContentView: View {
                         {      Text("BELLEN")
                                 .bold()
                                 .font(Font.system(size: 13, design: .monospaced))
+                                .foregroundColor(.gray)
                         }
                     }
                     Button(action: {
@@ -44,11 +45,13 @@ struct ContentView: View {
                         print("refresh werkt ook")
                     }) {
                         if self.currentTab == 1 {
-                            UnderlinedTextCall("CHAT")
+                            UnderlinedTextCall("CHATTEN")
+                            
                         } else
-                        {      Text("CHAT")
+                        {      Text("CHATTEN")
                                 .bold()
                                 .font(Font.system(size: 13, design: .monospaced))
+                                .foregroundColor(.gray)
                         }
                     }
                 }
@@ -68,7 +71,12 @@ struct ContentView: View {
                     }
                 }
             }
-        }
+        }.overlay(Rectangle()
+            .frame(height: 1)
+            .foregroundColor(.gray)
+            .opacity(0.3)
+            .padding(.top, 50)
+        , alignment: .top)
     }
 }
 
