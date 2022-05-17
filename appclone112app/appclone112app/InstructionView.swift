@@ -21,16 +21,19 @@ struct InstructionView: View {
                 numberView(1)
                     .padding(.horizontal)
                 Text("Bel eerst 112 via een rode belknop in het 'Bellen' scherm.")
+                    .padding()
             }
             HStack {
                 numberView(2)
                     .padding(.horizontal)
                 Text("Kom tijdens het bellen terug naar de 112NL app.")
+                    .padding()
             }
             HStack{
                 numberView(3)
                     .padding(.horizontal)
                 Text("Wacht tot de chat gestart wordt. Let op: Dit kan even duren.")
+                    .padding()
             }
         }
     }
@@ -39,13 +42,15 @@ struct InstructionView: View {
 @ViewBuilder
 func numberView(_ number: Int) -> some View {
     let number: String = String(number)
+    ZStack{
     Text(number)
-        .bold()
         .font(Font.system(size: 20, design: .default))
+        .bold()
         .padding()
         .foregroundColor(.white)
         .background(.blue)
         .clipShape(Circle())
+    }
         
 }
 
