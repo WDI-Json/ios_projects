@@ -65,13 +65,20 @@ struct ContentView: View {
                         Label("Refresh", systemImage: "info.circle.fill")
                     }
                     Button(action: {
-                        print("edit")
+                        withAnimation{
+                            self.currentTab = 3
+                        }
                     }) {
                         Label("Edit", systemImage: "gearshape.fill")
                     }
                 }
             }
-        }
+        }.overlay(Rectangle()
+            .frame(height: 1)
+            .foregroundColor(.gray)
+            .opacity(0.3)
+            .padding(.top, 50)
+        , alignment: .top)
     }
 }
 

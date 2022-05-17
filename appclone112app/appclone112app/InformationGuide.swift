@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct informationGuideView: View {
+    @Environment(\.presentationMode) private var presentationMode
     var body: some View {
-        Text("TO DO: uitzoeken hoe ik dit verticaal laat openen ipv horizontaal")
-//    https://stackoverflow.com/questions/58428225/how-to-trigger-sheet-on-tabview-click
+        
+        TabView {
+            Text("instructie1")
+            Text("instructie2")
+            Text("instructie3")
+            Text("instructie4")
+            Text("instructie5")
+            Text("instructie6")
+        }
+        .overlay(
+            Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+         }) {
+           Text("Dismiss")
+         })
+        .tabViewStyle(PageTabViewStyle())
+
     }
 }
 
