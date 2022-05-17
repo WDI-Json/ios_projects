@@ -16,7 +16,8 @@ struct ContentView: View {
             TabView(selection: self.$currentTab) {
                 MainView().tag(0)
                 InstructionView().tag(1)
-                view3().tag(2)
+                informationGuideView().tag(2)
+                SettingsView().tag(3)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .edgesIgnoringSafeArea(.all)
@@ -46,7 +47,6 @@ struct ContentView: View {
                     }) {
                         if self.currentTab == 1 {
                             UnderlinedTextCall("CHATTEN")
-                            
                         } else
                         {      Text("CHATTEN")
                                 .bold()
@@ -71,12 +71,7 @@ struct ContentView: View {
                     }
                 }
             }
-        }.overlay(Rectangle()
-            .frame(height: 1)
-            .foregroundColor(.gray)
-            .opacity(0.3)
-            .padding(.top, 50)
-        , alignment: .top)
+        }
     }
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D22A1B0F282E3D3E00101D96 /* LabelledDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22A1B0E282E3D3E00101D96 /* LabelledDivider.swift */; };
+		D2673F012833607200D584D8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2673F002833607200D584D8 /* SettingsView.swift */; };
 		D2AFA042282ED8A40080F39F /* locationmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA041282ED8A40080F39F /* locationmanager.swift */; };
 		D2AFA044282EF12F0080F39F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */; };
 		D2AFA046282EFA470080F39F /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AFA045282EFA470080F39F /* PulseAnimation.swift */; };
@@ -17,12 +18,13 @@
 		D2B022FA282CF8E200A762A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B022F9282CF8E200A762A6 /* Preview Assets.xcassets */; };
 		D2B02303282CFE8B00A762A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B02302282CFE8B00A762A6 /* MainView.swift */; };
 		D2B02305282CFE9900A762A6 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B02304282CFE9900A762A6 /* InstructionView.swift */; };
-		D2B02307282CFEA200A762A6 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B02306282CFEA200A762A6 /* ChatView.swift */; };
+		D2B02307282CFEA200A762A6 /* InformationGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B02306282CFEA200A762A6 /* InformationGuide.swift */; };
 		D2B02309282CFF1700A762A6 /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B02308282CFF1700A762A6 /* ButtonViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D22A1B0E282E3D3E00101D96 /* LabelledDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDivider.swift; sourceTree = "<group>"; };
+		D2673F002833607200D584D8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D2AFA041282ED8A40080F39F /* locationmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationmanager.swift; sourceTree = "<group>"; };
 		D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D2AFA045282EFA470080F39F /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		D2B022F9282CF8E200A762A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2B02302282CFE8B00A762A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D2B02304282CFE9900A762A6 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
-		D2B02306282CFEA200A762A6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		D2B02306282CFEA200A762A6 /* InformationGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationGuide.swift; sourceTree = "<group>"; };
 		D2B02308282CFF1700A762A6 /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,12 +72,13 @@
 				D2B022F2282CF8E100A762A6 /* appclone112appApp.swift */,
 				D22A1B0E282E3D3E00101D96 /* LabelledDivider.swift */,
 				D2B022F4282CF8E100A762A6 /* ContentView.swift */,
+				D2673F002833607200D584D8 /* SettingsView.swift */,
 				D2B02302282CFE8B00A762A6 /* MainView.swift */,
 				D2AFA045282EFA470080F39F /* PulseAnimation.swift */,
 				D2AFA041282ED8A40080F39F /* locationmanager.swift */,
 				D2B02308282CFF1700A762A6 /* ButtonViews.swift */,
 				D2B02304282CFE9900A762A6 /* InstructionView.swift */,
-				D2B02306282CFEA200A762A6 /* ChatView.swift */,
+				D2B02306282CFEA200A762A6 /* InformationGuide.swift */,
 				D2AFA043282EF12F0080F39F /* Launch Screen.storyboard */,
 				D2B022F6282CF8E200A762A6 /* Assets.xcassets */,
 				D2B022F8282CF8E200A762A6 /* Preview Content */,
@@ -163,10 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2B022F5282CF8E100A762A6 /* ContentView.swift in Sources */,
-				D2B02307282CFEA200A762A6 /* ChatView.swift in Sources */,
+				D2B02307282CFEA200A762A6 /* InformationGuide.swift in Sources */,
 				D2B02309282CFF1700A762A6 /* ButtonViews.swift in Sources */,
 				D2B022F3282CF8E100A762A6 /* appclone112appApp.swift in Sources */,
 				D2B02303282CFE8B00A762A6 /* MainView.swift in Sources */,
+				D2673F012833607200D584D8 /* SettingsView.swift in Sources */,
 				D2AFA042282ED8A40080F39F /* locationmanager.swift in Sources */,
 				D2B02305282CFE9900A762A6 /* InstructionView.swift in Sources */,
 				D2AFA046282EFA470080F39F /* PulseAnimation.swift in Sources */,
