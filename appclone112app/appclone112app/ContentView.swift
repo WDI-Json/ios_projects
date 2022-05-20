@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var currentTab: Int = 0
-    
+    @State private var isPresented = false
     
     var body: some View {
         NavigationView {
@@ -22,6 +22,7 @@ struct ContentView: View {
             .tabViewStyle(.page(indexDisplayMode: .never))
             .edgesIgnoringSafeArea(.all)
             .navigationBarTitleDisplayMode(.inline)
+            .fullScreenCover(isPresented: $isPresented, content: informationGuideView.init)
             .toolbar{
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     Button(action: {

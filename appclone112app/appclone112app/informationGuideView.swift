@@ -17,14 +17,16 @@ struct informationGuideView: View {
             Text("instructie3")
             Text("instructie4")
             Text("instructie5")
-            Text("instructie6")
+            HStack {
+                Text("instructie6")
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                 }) {
+                   Text("Dismiss")
+                 }
+            }
         }
-        .overlay(
-            Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
-         }) {
-           Text("Dismiss")
-         })
+        
         .tabViewStyle(PageTabViewStyle())
 
     }
