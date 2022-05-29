@@ -10,28 +10,36 @@ import SwiftUI
 struct MainView: View {
     @StateObject var locationManager = LocationManager()
     var userLatitude: String {
-        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
+        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0.0)"
     }
     
     var userLongitude: String {
-        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
+        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0.0)"
     }
     
     var body: some View {
         VStack{
             ZStack{
                 //TO DO: pulseanimation + text als parameterinput meegeven. Dus 1 call met geolocs
-            PulseAnimation()
-            Text("""
-             Uw locatie
-             \(userLatitude)N
-             \(userLongitude)E
-             nauwkeurigheid
-             23 meter
+                PulseAnimation()
+                VStack{
+                    Text("Uw locatie")
+                        .bold()
+                        .padding(1)
+                    Text("""
+             \(getLocationDegreesFrom(latitude: Double(userLatitude)!))
+             \(getLocationDegreesFrom(longitude: Double(userLongitude)!))
              """)
-            .bold()
-            .multilineTextAlignment(.center)
-            .padding(125)
+                    .bold()
+                    .padding(1)
+                    .foregroundColor(.blue)
+                    .font(Font.system(size: 25, design: .default))
+                    Text("nauwkeurigheid")
+                    Text("23 meter")
+                        .bold()
+                }
+                .multilineTextAlignment(.center)
+                .padding(125)
             }
             RedPillButton()
             LabelledDivider(label: "of")
@@ -68,7 +76,35 @@ struct MainView: View {
     }
 }
 
+func getLocationDegreesFrom(latitude: Double) -> String {
+    var latSeconds = Int(latitude * 3600)
+    let latDegrees = latSeconds / 3600
+    latSeconds = abs(latSeconds % 3600)
+    let latMinutes = latSeconds / 60
+    latSeconds %= 60
+    return String(
+        format: "%d°%d'%d\"%@",
+        abs(latDegrees),
+        latMinutes,
+        latSeconds,
+        latDegrees >= 0 ? "N" : "S"
+    )
+}
 
+func getLocationDegreesFrom(longitude: Double) -> String {
+    var longSeconds = Int(longitude * 3600)
+    let longDegrees = longSeconds / 3600
+    longSeconds = abs(longSeconds % 3600)
+    let longMinutes = longSeconds / 60
+    longSeconds %= 60
+    return String(
+        format: "%d°%d'%d\"%@",
+        abs(longDegrees),
+        longMinutes,
+        longSeconds,
+        longDegrees >= 0 ? "E" : "W"
+    )
+}
 
 
 struct view1_Previews: PreviewProvider {

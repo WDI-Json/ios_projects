@@ -60,6 +60,7 @@ struct ContentView: View {
                     Button(action: {
                         withAnimation{
                             self.currentTab = 2
+                            
                         }
                         print("Refresh?")
                     }) {

@@ -49,3 +49,4 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         print(#function, location)
     }
 }
+
