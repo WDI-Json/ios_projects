@@ -33,9 +33,9 @@ struct MainView: View {
                     .bold()
                     .padding(1)
                     .foregroundColor(.blue)
-                    .font(Font.system(size: 25, design: .default))
+                    .font(Font.system(size: 22, design: .default))
                     Text("nauwkeurigheid")
-                    Text("23 meter")
+                    Text("7 meter")
                         .bold()
                 }
                 .multilineTextAlignment(.center)
