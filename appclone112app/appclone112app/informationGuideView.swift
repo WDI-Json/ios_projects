@@ -10,25 +10,34 @@ import SwiftUI
 struct informationGuideView: View {
     @Environment(\.presentationMode) private var presentationMode
     var body: some View {
-        
-        TabView {
-            Text("instructie1")
-            Text("instructie2")
-            Text("instructie3")
-            Text("instructie4")
-            Text("instructie5")
+        VStack {
             HStack {
-                Text("instructie6")
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
-                 }) {
-                   Text("Dismiss")
-                 }
+                }) {
+                    Image(systemName: "xmark")
+                }
+                .padding()
+                Spacer()
             }
+            Divider()
+            TabView {
+                Text("instructie1")
+                Text("instructie2")
+                Text("instructie3")
+                Text("instructie4")
+                Text("instructie5")
+                HStack {
+                    Text("instructie6")
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Dismiss")
+                    }
+                }
+            }
+            .tabViewStyle(PageTabViewStyle())
         }
-        
-        .tabViewStyle(PageTabViewStyle())
-
     }
 }
 

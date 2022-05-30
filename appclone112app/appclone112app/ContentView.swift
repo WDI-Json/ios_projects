@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State var currentTab: Int = 0
     @State private var isPresented = false
-    
     var body: some View {
         NavigationView {
             TabView(selection: self.$currentTab) {
@@ -34,7 +33,7 @@ struct ContentView: View {
                         if self.currentTab == 0 {
                             UnderlinedTextCall("BELLEN")
                         } else
-                        {      Text("BELLEN")
+                        {Text("BELLEN")
                                 .bold()
                                 .font(Font.system(size: 13, design: .monospaced))
                                 .foregroundColor(.gray)
@@ -49,7 +48,7 @@ struct ContentView: View {
                         if self.currentTab == 1 {
                             UnderlinedTextCall("CHATTEN")
                         } else
-                        {      Text("CHATTEN")
+                        {Text("CHATTEN")
                                 .bold()
                                 .font(Font.system(size: 13, design: .monospaced))
                                 .foregroundColor(.gray)
@@ -59,10 +58,8 @@ struct ContentView: View {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button(action: {
                         withAnimation{
-                            self.currentTab = 2
-                            
+                            self.isPresented = true
                         }
-                        print("Refresh?")
                     }) {
                         Label("Refresh", systemImage: "info.circle.fill")
                     }
@@ -75,12 +72,12 @@ struct ContentView: View {
                     }
                 }
             }
-        }.overlay(Rectangle()
+        }
+        .overlay(Rectangle()
             .frame(height: 1)
             .foregroundColor(.gray)
             .opacity(0.3)
-            .padding(.top, 50)
-        , alignment: .top)
+            .padding(.top, 50) ,alignment: .top)
     }
 }
 
