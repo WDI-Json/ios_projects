@@ -9,7 +9,9 @@ import Foundation
 
 struct Constants {
     static let API_KEY = "8cd6031d78e1d4a63b1b72a947410b07"
+    static let Youtube_API_KEY = "AIzaSyD6Vfgbk9bejvDHdC4Ioemci1DAPumlnQI"
     static let BaseURL = "https://api.themoviedb.org"
+    static let YoutubeBaseURL = "https://youtube.googleapis.com/youtube/v3/search?"
 }
 
 enum APIError: Error {
@@ -135,4 +137,15 @@ class APICaller {
         }
         task.resume()
     }
+    
+    func getMovie(with query: String) {
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
+        guard let url = URL(string: "\(Constants.YoutubeBaseURL)q=\(query)&key=\(Constants.Youtube_API_KEY)") else {return}
+        
+        
+        
+    }
 }
+
+
+//https://youtube.googleapis.com/youtube/v3/search?key=[YOUR_API_KEY]
