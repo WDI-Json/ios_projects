@@ -11,7 +11,6 @@ struct AddView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var listViewModel: ListViewModel
     @State var textFieldText: String = ""
-    
     @State var alertTitle: String = ""
     @State var showAlert: Bool = false
     
@@ -23,10 +22,9 @@ struct AddView: View {
                     .frame(height: 55)
                     .background(
                         Color(UIColor
-                                .secondarySystemBackground)
+                            .secondarySystemBackground)
                     )
-                .cornerRadius(10)
-                
+                    .cornerRadius(10)
                 Button(action: saveButtonPressed, label: {
                     Text("Save".uppercased())
                         .foregroundColor(.white)
@@ -56,7 +54,6 @@ struct AddView: View {
             showAlert.toggle()
             return false
         }
-        //extra checks if you want
         return true
     }
     
@@ -67,20 +64,17 @@ struct AddView: View {
 
 struct AddView_Previews: PreviewProvider {
     static var previews: some View {
-        
         Group {
             NavigationView{
                 AddView()
             }
             .preferredColorScheme(.light)
             .environmentObject(ListViewModel())
-        
             NavigationView{
                 AddView()
             }
             .preferredColorScheme(.dark)
             .environmentObject(ListViewModel())
-        
         }
     }
 }

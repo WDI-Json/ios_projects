@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NoItemsView: View {
-    
     @State var animate: Bool = false
     let secundaryAccentColor = Color("SecondaryAccentColor")
     
@@ -46,19 +45,19 @@ struct NoItemsView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-        
-        func addAnimation() {
-            guard !animate else { return }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                withAnimation(
-                    Animation
-                        .easeInOut(duration: 2.0)
-                        .repeatForever()
-                ) {
-                    animate.toggle()
-                }
+    
+    func addAnimation() {
+        guard !animate else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            withAnimation(
+                Animation
+                    .easeInOut(duration: 2.0)
+                    .repeatForever()
+            ) {
+                animate.toggle()
             }
         }
+    }
 }
 
 struct NoItemsView_Previews: PreviewProvider {

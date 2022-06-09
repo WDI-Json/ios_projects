@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ListView: View {
-    
     @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
@@ -33,7 +32,6 @@ struct ListView: View {
                 .listStyle(PlainListStyle())
             }
         }
-
         .navigationTitle("Todo List 📝")
         .navigationBarItems(
             leading: EditButton(),

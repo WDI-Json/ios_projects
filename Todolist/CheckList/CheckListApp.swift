@@ -16,7 +16,6 @@ import SwiftUI
  */
 @main
 struct CheckListApp: App {
-    
     @StateObject var listViewModel: ListViewModel = ListViewModel()
     
     var body: some Scene {
@@ -26,7 +25,6 @@ struct CheckListApp: App {
             }
             .navigationViewStyle(StackNavigationViewStyle())
             .environmentObject(listViewModel)
-            
         }
     }
 }
