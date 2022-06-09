@@ -11,7 +11,6 @@ struct SettingsView: View {
     var body: some View {
         List{
             NavigationLink("Persoonlijke gegevens", destination: PersonalSettings())
-            
             Text("Over 112NL")
             Text("Privacystatement")
             Text("Licenties")

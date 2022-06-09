@@ -9,6 +9,7 @@ import SwiftUI
 
 struct informationGuideView: View {
     @Environment(\.presentationMode) private var presentationMode
+    
     var body: some View {
         VStack {
             HStack {
@@ -35,8 +36,7 @@ struct informationGuideView: View {
                         Text("Dismiss")
                     }
                 }
-            }
-            .tabViewStyle(PageTabViewStyle())
+            }.tabViewStyle(PageTabViewStyle())
         }
     }
 }
