@@ -11,25 +11,23 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemYellow
-
-        let vc1 = UINavigationController(rootViewController: HomeViewController())
-        let vc2 = UINavigationController(rootViewController: UpcomingViewController())
-        let vc3 = UINavigationController(rootViewController: SearchViewController())
-        let vc4 = UINavigationController(rootViewController: DownloadsViewController())
         
-        vc1.tabBarItem.image = UIImage(systemName: "house")
-        vc2.tabBarItem.image = UIImage(systemName: "play.circle")
-        vc3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        vc4.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
+        let homevc = UINavigationController(rootViewController: HomeViewController())
+        let upcomingvc = UINavigationController(rootViewController: UpcomingViewController())
+        let searchvc = UINavigationController(rootViewController: SearchViewController())
+        let downloadsvc = UINavigationController(rootViewController: DownloadsViewController())
         
-        vc1.title = "Home"
-        vc2.title = "Coming"
-        vc3.title = "Top Search"
-        vc4.title = "Downloads"
+        homevc.tabBarItem.image = UIImage(systemName: "house")
+        upcomingvc.tabBarItem.image = UIImage(systemName: "play.circle")
+        searchvc.tabBarItem.image = UIImage(systemName: "magnifyingglass")
+        downloadsvc.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
         
+        homevc.title = "Home"
+        upcomingvc.title = "Coming"
+        searchvc.title = "Top Search"
+        downloadsvc.title = "Downloads"
         tabBar.tintColor = .label
-        
-        setViewControllers([vc1, vc2, vc3, vc4], animated: true)
+        setViewControllers([homevc, upcomingvc, searchvc, downloadsvc], animated: true)
     }
 }
 

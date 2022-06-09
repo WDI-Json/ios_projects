@@ -8,9 +8,7 @@
 import UIKit
 
 class DownloadsViewController: UIViewController {
-    
     private var titles: [TitleItem] = [TitleItem]()
-    
     private let downloadedTable: UITableView = {
         let table = UITableView()
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
@@ -54,7 +52,6 @@ class DownloadsViewController: UIViewController {
 }
 
 extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titles.count
     }
@@ -80,12 +77,12 @@ extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
                 switch result {
                 case .success():
                     print("Deleted from the database")
+                    
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
                 self?.titles.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .fade)
-                
             }
         default:
             break
@@ -94,9 +91,7 @@ extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let title = titles[indexPath.row]
-        
         guard let titleName = title.original_title ?? title.original_name else {return}
         
         APICaller.shared.getMovie(with: titleName) { [weak self] result in
@@ -107,7 +102,7 @@ extension DownloadsViewController: UITableViewDelegate, UITableViewDataSource {
                     vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
- 
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }

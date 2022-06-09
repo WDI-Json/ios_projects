@@ -12,13 +12,9 @@ protocol SearchResultsViewControllerDelegate: AnyObject {
 }
 
 class SearchResultsViewController: UIViewController {
-
     public var titles: [Title] = [Title]()
-    
     public weak var delegate: SearchResultsViewControllerDelegate?
-    
     public let searchResultsCollectionView: UICollectionView = {
-       
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 10, height: 200)
         layout.minimumInteritemSpacing = 0
@@ -30,14 +26,10 @@ class SearchResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .systemGreen
         view.addSubview(searchResultsCollectionView)
-        
         searchResultsCollectionView.delegate = self
         searchResultsCollectionView.dataSource = self
-        
-        
     }
     
     override func viewDidLayoutSubviews() {
@@ -62,7 +54,6 @@ extension SearchResultsViewController: UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        
         let title = titles[indexPath.row]
         guard let titleName = title.original_title ?? title.original_name else {return}
         
@@ -70,7 +61,7 @@ extension SearchResultsViewController: UICollectionViewDelegate, UICollectionVie
             switch result {
             case .success(let videoElement):
                 self?.delegate?.SearchResultsViewControllerDidTapItem(TitlePreviewViewModel(title: title.original_name ?? title.original_title ?? "", youtubeView: videoElement, titleOverview: title.overview ?? ""))
- 
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }

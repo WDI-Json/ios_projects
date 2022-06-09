@@ -8,9 +8,7 @@
 import UIKit
 
 class UpcomingViewController: UIViewController {
-    
     private var titles: [Title] = [Title]()
-    
     private let upcomingTable: UITableView = {
         let table = UITableView()
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
@@ -23,11 +21,9 @@ class UpcomingViewController: UIViewController {
         title = "Upcoming"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
-        
         view.addSubview(upcomingTable)
         upcomingTable.delegate = self
         upcomingTable.dataSource = self
-        
         fetchUpcoming()
     }
     
@@ -44,6 +40,7 @@ class UpcomingViewController: UIViewController {
                 DispatchQueue.main.async {
                     self?.upcomingTable.reloadData()
                 }
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -71,9 +68,7 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let title = titles[indexPath.row]
-        
         guard let titleName = title.original_title ?? title.original_name else {return}
         
         APICaller.shared.getMovie(with: titleName) { [weak self] result in
@@ -84,7 +79,7 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
                     vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
- 
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }

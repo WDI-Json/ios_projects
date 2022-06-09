@@ -16,13 +16,10 @@ class DataPersistenceManager {
         case failedToFetchData
         case failedToDeleteData
     }
-    
     static let shared = DataPersistenceManager()
     
     func downloadTitleWith(model: Title, completion: @escaping (Result<Void, Error>) -> Void) {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        
         let context = appDelegate.persistentContainer.viewContext
         let item = TitleItem(context: context)
         
@@ -46,11 +43,8 @@ class DataPersistenceManager {
     
     func fetchtingTitlesFromDatabase(completion: @escaping (Result<[TitleItem], Error>) -> Void) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        
         let context = appDelegate.persistentContainer.viewContext
-        
         let request: NSFetchRequest<TitleItem>
-        
         request = TitleItem.fetchRequest()
         
         do {
@@ -63,15 +57,14 @@ class DataPersistenceManager {
     
     func deleteTitleWith(model: TitleItem, completion: @escaping (Result<Void, Error>) -> Void){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        
         let context = appDelegate.persistentContainer.viewContext
-        
         context.delete(model)
+        
         do {
             try context.save()
             completion(.success(()))
         } catch {
-                completion(.failure(DatabaseError.failedToDeleteData))
+            completion(.failure(DatabaseError.failedToDeleteData))
         }
     }
 }

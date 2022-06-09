@@ -11,15 +11,10 @@ protocol CollectionViewTableViewCellDelegate: AnyObject {
     func CollectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewmodel: TitlePreviewViewModel)
 }
 
-
 class CollectionViewTableViewCell: UITableViewCell {
-    
     static let identifier = "CollectionViewTableViewCell"
-    
     weak var delegate: CollectionViewTableViewCellDelegate?
-    
     private var titles: [Title] = [Title]()
-    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 140, height: 200)
@@ -33,7 +28,6 @@ class CollectionViewTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .systemPink
         contentView.addSubview(collectionView)
-        
         collectionView.delegate = self
         collectionView.dataSource = self
     }
@@ -56,7 +50,6 @@ class CollectionViewTableViewCell: UITableViewCell {
     
     private func downloadTitleAt(indexPath: IndexPath) {
         let title = titles[indexPath.row]
-        
         DataPersistenceManager.shared.downloadTitleWith(model: title) { result in
             switch result {
             case .success():
@@ -65,13 +58,10 @@ class CollectionViewTableViewCell: UITableViewCell {
                 print(error.localizedDescription)
             }
         }
-        
-        
     }
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.identifier, for: indexPath) as? TitleCollectionViewCell else {
             return UICollectionViewCell()
@@ -89,19 +79,16 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        
         let title = titles[indexPath.row]
         guard let titleName = title.original_title ?? title.original_name else { return }
         
         APICaller.shared.getMovie(with: titleName + " trailer") { [weak self] result in
             switch result {
             case .success(let videoElement):
-                
                 let title = self?.titles[indexPath.row]
                 guard let titleOverview = title?.overview else {return}
                 guard let strongSelf = self else {return}
                 let viewModel = TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: titleOverview)
-                
                 self?.delegate?.CollectionViewTableViewCellDidTapCell(strongSelf, viewmodel: viewModel)
                 
             case .failure(let error):
@@ -109,9 +96,8 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
             }
         }
     }
-   
+    
     func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
-        
         let config = UIContextMenuConfiguration(
             identifier: nil,
             previewProvider: nil) { [weak self]_ in
@@ -120,6 +106,6 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
                 }
                 return UIMenu(title: "", subtitle: nil, image: nil, identifier: nil, options: .displayInline, children: [downloadAction])
             }
-            return config
+        return config
     }
 }

@@ -8,9 +8,7 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
     private var titles: [Title] = [Title]()
-    
     private let discoverTable: UITableView = {
         let table = UITableView()
         table.register(TitleTableViewCell.self, forCellReuseIdentifier: TitleTableViewCell.identifier)
@@ -29,17 +27,13 @@ class SearchViewController: UIViewController {
         title = "Search"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
-        
         view.backgroundColor = .systemBackground
-        
         view.addSubview(discoverTable)
         discoverTable.delegate = self
         discoverTable.dataSource = self
-        
         navigationItem.searchController = searchController
         navigationController?.navigationBar.tintColor = .white
         fetchDiscoverMovies()
-        
         searchController.searchResultsUpdater = self
     }
     
@@ -51,6 +45,7 @@ class SearchViewController: UIViewController {
                 DispatchQueue.main.async {
                     self?.discoverTable.reloadData()
                 }
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -71,7 +66,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TitleTableViewCell.identifier, for: indexPath) as? TitleTableViewCell else {
             return UITableViewCell()
-    }
+        }
         let title = titles[indexPath.row]
         let model = TitleViewModel(titleName: title.original_name ?? title.original_title ?? "Unknown name", posterURL: title.poster_path ?? "")
         cell.configure(with: model)
@@ -84,9 +79,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let title = titles[indexPath.row]
-        
         guard let titleName = title.original_title ?? title.original_name else {return}
         
         APICaller.shared.getMovie(with: titleName) { [weak self] result in
@@ -97,7 +90,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
                     vc.configure(with: TitlePreviewViewModel(title: titleName, youtubeView: videoElement, titleOverview: title.overview ?? ""))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
- 
+                
             case .failure(let error):
                 print(error.localizedDescription)
             }
@@ -106,14 +99,12 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension SearchViewController: UISearchResultsUpdating, SearchResultsViewControllerDelegate {
-    
     func updateSearchResults(for searchController: UISearchController) {
         let searchbar = searchController.searchBar
-        
         guard let query = searchbar.text,
               !query.trimmingCharacters(in: .whitespaces).isEmpty,
               query.trimmingCharacters(in: .whitespaces).count >= 3,
-                let resultsController = searchController.searchResultsController as? SearchResultsViewController else { return
+              let resultsController = searchController.searchResultsController as? SearchResultsViewController else { return
         }
         resultsController.delegate = self
         
@@ -123,6 +114,7 @@ extension SearchViewController: UISearchResultsUpdating, SearchResultsViewContro
                 case .success(let titles):
                     resultsController.titles = titles
                     resultsController.searchResultsCollectionView.reloadData()
+                    
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
