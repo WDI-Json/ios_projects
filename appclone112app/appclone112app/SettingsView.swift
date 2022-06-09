@@ -18,7 +18,7 @@ struct SettingsView: View {
             Text("Bekijk de 112NL app instructies")
             Section(footer: Text("112 appclone made by Wouter Dijks")) {
             }
-        }.listStyle(.plain)
+        }
     }
 }
             

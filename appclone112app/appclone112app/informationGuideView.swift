@@ -22,13 +22,13 @@ struct informationGuideView: View {
             }
             Divider()
             TabView {
-                Text("instructie1")
-                Text("instructie2")
-                Text("instructie3")
-                Text("instructie4")
-                Text("instructie5")
+                Text("Hier moet nog iets")
+                Text("Vervolgens komt dit")
+                Text("Dan dat")
+                Text("en nog iets")
+                Text("een na laatste")
                 HStack {
-                    Text("instructie6")
+                    Text("Tadaa")
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {

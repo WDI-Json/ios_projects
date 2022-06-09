@@ -15,7 +15,6 @@ struct ContentView: View {
             TabView(selection: self.$currentTab) {
                 MainView().tag(0)
                 InstructionView().tag(1)
-                informationGuideView().tag(2)
                 SettingsView().tag(3)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
@@ -32,8 +31,8 @@ struct ContentView: View {
                     }) {
                         if self.currentTab == 0 {
                             UnderlinedTextCall("BELLEN")
-                        } else
-                        {Text("BELLEN")
+                        } else {
+                            Text("BELLEN")
                                 .bold()
                                 .font(Font.system(size: 13, design: .monospaced))
                                 .foregroundColor(.gray)
@@ -47,8 +46,8 @@ struct ContentView: View {
                     }) {
                         if self.currentTab == 1 {
                             UnderlinedTextCall("CHATTEN")
-                        } else
-                        {Text("CHATTEN")
+                        } else {
+                            Text("CHATTEN")
                                 .bold()
                                 .font(Font.system(size: 13, design: .monospaced))
                                 .foregroundColor(.gray)

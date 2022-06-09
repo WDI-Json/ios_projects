@@ -48,8 +48,7 @@ func  UnderlinedTextCall(_ text: String) -> some View {
             .font(Font.system(size: 13, design: .default))
             .bold()
             .foregroundColor(.blue)
-//            .font(.body)
-            .padding([.top, .bottom], 6)
+            .padding([.top, .bottom], 3)
             .overlay(Rectangle()
                 .frame(height: 3)
                 .foregroundColor(.blue),
@@ -69,10 +68,12 @@ struct ButtonViews_Previews: PreviewProvider {
             .frame(width: 100, height: 100)
             .previewLayout(.sizeThatFits)
             .padding()
+        
         RedCircleButton("politie")
             .frame(width: 100, height: 100)
             .previewLayout(.sizeThatFits)
             .padding()
+        
         RedCircleButton("ambulance")
             .frame(width: 100, height: 100)
             .previewLayout(.sizeThatFits)

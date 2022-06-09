@@ -20,7 +20,6 @@ struct MainView: View {
     var body: some View {
         VStack{
             ZStack{
-                //TO DO: pulseanimation + text als parameterinput meegeven. Dus 1 call met geolocs
                 PulseAnimation()
                 VStack{
                     Text("Uw locatie")
@@ -39,11 +38,10 @@ struct MainView: View {
                         .bold()
                 }
                 .multilineTextAlignment(.center)
-                .padding(125)
             }
             RedPillButton()
             LabelledDivider(label: "of")
-            HStack{
+            HStack {
                 RedCircleButton("politie")
                     .padding()
                 RedCircleButton("ambulance")
@@ -51,8 +49,8 @@ struct MainView: View {
                 RedCircleButton("brandweer")
                     .padding()
             }
-            HStack{
-                VStack{
+            HStack {
+                VStack {
                     Text("Bel 112")
                     Text("Politie")
                         .bold()
@@ -60,13 +58,13 @@ struct MainView: View {
                         .multilineTextAlignment(.center)
                 }
                 .multilineTextAlignment(.center)
-                VStack{
+                VStack {
                     Text("Bel 112")
                     Text("Ambulance")
                         .bold()
                         .padding(.horizontal)
                 }.multilineTextAlignment(.center)
-                VStack{
+                VStack {
                     Text("Bel 112")
                     Text("Brandweer")
                         .bold()
