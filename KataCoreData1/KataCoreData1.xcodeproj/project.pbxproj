@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D27851622854CFAC0061DD80 /* KataCoreData1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851612854CFAC0061DD80 /* KataCoreData1App.swift */; };
+		D27851642854CFAC0061DD80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851632854CFAC0061DD80 /* ContentView.swift */; };
+		D27851662854CFAD0061DD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27851652854CFAD0061DD80 /* Assets.xcassets */; };
+		D27851692854CFAD0061DD80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27851682854CFAD0061DD80 /* Preview Assets.xcassets */; };
+		D27851772854DABE0061DD80 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851762854DABE0061DD80 /* ToDo.swift */; };
+		D278517B2854DAF90061DD80 /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278517A2854DAF90061DD80 /* ToDoEntity.swift */; };
+		D278517D2854DB190061DD80 /* TodoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278517C2854DB190061DD80 /* TodoDataSource.swift */; };
+		D278517F2854DB710061DD80 /* TodoAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278517E2854DB710061DD80 /* TodoAPIImpl.swift */; };
+		D27851822854E13D0061DD80 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851812854E13D0061DD80 /* TodoRepository.swift */; };
+		D27851842854E1F40061DD80 /* TodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851832854E1F40061DD80 /* TodoRepositoryImpl.swift */; };
+		D27851872854E5C50061DD80 /* GetTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851862854E5C50061DD80 /* GetTodos.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D278515E2854CFAC0061DD80 /* KataCoreData1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KataCoreData1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27851612854CFAC0061DD80 /* KataCoreData1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataCoreData1App.swift; sourceTree = "<group>"; };
+		D27851632854CFAC0061DD80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D27851652854CFAD0061DD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D27851682854CFAD0061DD80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D27851762854DABE0061DD80 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		D278517A2854DAF90061DD80 /* ToDoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
+		D278517C2854DB190061DD80 /* TodoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDataSource.swift; sourceTree = "<group>"; };
+		D278517E2854DB710061DD80 /* TodoAPIImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAPIImpl.swift; sourceTree = "<group>"; };
+		D27851812854E13D0061DD80 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		D27851832854E1F40061DD80 /* TodoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryImpl.swift; sourceTree = "<group>"; };
+		D27851862854E5C50061DD80 /* GetTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodos.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D278515B2854CFAC0061DD80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D27851552854CFAC0061DD80 = {
+			isa = PBXGroup;
+			children = (
+				D27851602854CFAC0061DD80 /* KataCoreData1 */,
+				D278515F2854CFAC0061DD80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D278515F2854CFAC0061DD80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D278515E2854CFAC0061DD80 /* KataCoreData1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D27851602854CFAC0061DD80 /* KataCoreData1 */ = {
+			isa = PBXGroup;
+			children = (
+				D27851722854D9E70061DD80 /* Presentation */,
+				D27851712854D9E00061DD80 /* Domain */,
+				D27851702854D9DA0061DD80 /* Data */,
+				D278516F2854D9D50061DD80 /* Core */,
+				D27851612854CFAC0061DD80 /* KataCoreData1App.swift */,
+				D27851632854CFAC0061DD80 /* ContentView.swift */,
+				D27851652854CFAD0061DD80 /* Assets.xcassets */,
+				D27851672854CFAD0061DD80 /* Preview Content */,
+			);
+			path = KataCoreData1;
+			sourceTree = "<group>";
+		};
+		D27851672854CFAD0061DD80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D27851682854CFAD0061DD80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D278516F2854D9D50061DD80 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D27851702854D9DA0061DD80 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D27851742854DA830061DD80 /* DataSource */,
+				D27851732854DA7C0061DD80 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D27851712854D9E00061DD80 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D27851852854E5050061DD80 /* UseCase */,
+				D27851802854E1230061DD80 /* Repository */,
+				D27851752854DAAD0061DD80 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D27851722854D9E70061DD80 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D27851732854DA7C0061DD80 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D27851742854DA830061DD80 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D27851782854DAE00061DD80 /* API */,
+				D278517C2854DB190061DD80 /* TodoDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D27851752854DAAD0061DD80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D27851762854DABE0061DD80 /* ToDo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D27851782854DAE00061DD80 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D27851792854DAE50061DD80 /* Entity */,
+				D278517E2854DB710061DD80 /* TodoAPIImpl.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D27851792854DAE50061DD80 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D278517A2854DAF90061DD80 /* ToDoEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		D27851802854E1230061DD80 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D27851812854E13D0061DD80 /* TodoRepository.swift */,
+				D27851832854E1F40061DD80 /* TodoRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D27851852854E5050061DD80 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D27851862854E5C50061DD80 /* GetTodos.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D278515D2854CFAC0061DD80 /* KataCoreData1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D278516C2854CFAD0061DD80 /* Build configuration list for PBXNativeTarget "KataCoreData1" */;
+			buildPhases = (
+				D278515A2854CFAC0061DD80 /* Sources */,
+				D278515B2854CFAC0061DD80 /* Frameworks */,
+				D278515C2854CFAC0061DD80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KataCoreData1;
+			productName = KataCoreData1;
+			productReference = D278515E2854CFAC0061DD80 /* KataCoreData1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D27851562854CFAC0061DD80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D278515D2854CFAC0061DD80 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D27851592854CFAC0061DD80 /* Build configuration list for PBXProject "KataCoreData1" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D27851552854CFAC0061DD80;
+			productRefGroup = D278515F2854CFAC0061DD80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D278515D2854CFAC0061DD80 /* KataCoreData1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D278515C2854CFAC0061DD80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27851692854CFAD0061DD80 /* Preview Assets.xcassets in Resources */,
+				D27851662854CFAD0061DD80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D278515A2854CFAC0061DD80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D278517F2854DB710061DD80 /* TodoAPIImpl.swift in Sources */,
+				D27851872854E5C50061DD80 /* GetTodos.swift in Sources */,
+				D278517D2854DB190061DD80 /* TodoDataSource.swift in Sources */,
+				D27851772854DABE0061DD80 /* ToDo.swift in Sources */,
+				D27851842854E1F40061DD80 /* TodoRepositoryImpl.swift in Sources */,
+				D27851642854CFAC0061DD80 /* ContentView.swift in Sources */,
+				D27851822854E13D0061DD80 /* TodoRepository.swift in Sources */,
+				D278517B2854DAF90061DD80 /* ToDoEntity.swift in Sources */,
+				D27851622854CFAC0061DD80 /* KataCoreData1App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D278516A2854CFAD0061DD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D278516B2854CFAD0061DD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D278516D2854CFAD0061DD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KataCoreData1/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL4KR75454;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wutu.KataCoreData1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D278516E2854CFAD0061DD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KataCoreData1/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL4KR75454;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wutu.KataCoreData1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D27851592854CFAC0061DD80 /* Build configuration list for PBXProject "KataCoreData1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D278516A2854CFAD0061DD80 /* Debug */,
+				D278516B2854CFAD0061DD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D278516C2854CFAD0061DD80 /* Build configuration list for PBXNativeTarget "KataCoreData1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D278516D2854CFAD0061DD80 /* Debug */,
+				D278516E2854CFAD0061DD80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D27851562854CFAC0061DD80 /* Project object */;
+}
