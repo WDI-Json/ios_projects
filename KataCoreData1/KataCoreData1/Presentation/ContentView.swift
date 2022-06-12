@@ -2,15 +2,14 @@
 //  ContentView.swift
 //  KataCoreData1
 //
-//  Created by Wouter on 11/06/2022.
+//  Created by Wouter on 12/06/2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 

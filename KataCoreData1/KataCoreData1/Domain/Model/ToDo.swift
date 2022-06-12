@@ -8,7 +8,7 @@
 import Foundation
 
 struct Todo: Identifiable {
-    let id: Int
+    let id: UUID
     let title: String
     let isCompleted: Bool
 }

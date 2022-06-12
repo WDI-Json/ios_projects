@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D204585A2855E1A70030B9F6 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D20458582855E1A70030B9F6 /* Main.xcdatamodeld */; };
+		D204585F2855E2F90030B9F6 /* TodoCoreDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D204585E2855E2F90030B9F6 /* TodoCoreDataSourceImpl.swift */; };
+		D20458612855E3E40030B9F6 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20458602855E3E40030B9F6 /* TodoRepository.swift */; };
+		D20458632855E41A0030B9F6 /* TodoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20458622855E41A0030B9F6 /* TodoError.swift */; };
+		D20458652855E44D0030B9F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20458642855E44D0030B9F6 /* ContentView.swift */; };
+		D20458672855E50B0030B9F6 /* TodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20458662855E50B0030B9F6 /* TodoRepositoryImpl.swift */; };
 		D27851622854CFAC0061DD80 /* KataCoreData1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851612854CFAC0061DD80 /* KataCoreData1App.swift */; };
-		D27851642854CFAC0061DD80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851632854CFAC0061DD80 /* ContentView.swift */; };
 		D27851662854CFAD0061DD80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27851652854CFAD0061DD80 /* Assets.xcassets */; };
 		D27851692854CFAD0061DD80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27851682854CFAD0061DD80 /* Preview Assets.xcassets */; };
 		D27851772854DABE0061DD80 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851762854DABE0061DD80 /* ToDo.swift */; };
-		D278517B2854DAF90061DD80 /* ToDoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278517A2854DAF90061DD80 /* ToDoEntity.swift */; };
 		D278517D2854DB190061DD80 /* TodoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278517C2854DB190061DD80 /* TodoDataSource.swift */; };
-		D278517F2854DB710061DD80 /* TodoAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D278517E2854DB710061DD80 /* TodoAPIImpl.swift */; };
-		D27851822854E13D0061DD80 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851812854E13D0061DD80 /* TodoRepository.swift */; };
-		D27851842854E1F40061DD80 /* TodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851832854E1F40061DD80 /* TodoRepositoryImpl.swift */; };
-		D27851872854E5C50061DD80 /* GetTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851862854E5C50061DD80 /* GetTodos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D20458592855E1A70030B9F6 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		D204585E2855E2F90030B9F6 /* TodoCoreDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCoreDataSourceImpl.swift; sourceTree = "<group>"; };
+		D20458602855E3E40030B9F6 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		D20458622855E41A0030B9F6 /* TodoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoError.swift; sourceTree = "<group>"; };
+		D20458642855E44D0030B9F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D20458662855E50B0030B9F6 /* TodoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryImpl.swift; sourceTree = "<group>"; };
 		D278515E2854CFAC0061DD80 /* KataCoreData1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KataCoreData1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27851612854CFAC0061DD80 /* KataCoreData1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataCoreData1App.swift; sourceTree = "<group>"; };
-		D27851632854CFAC0061DD80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D27851652854CFAD0061DD80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D27851682854CFAD0061DD80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D27851762854DABE0061DD80 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
-		D278517A2854DAF90061DD80 /* ToDoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEntity.swift; sourceTree = "<group>"; };
 		D278517C2854DB190061DD80 /* TodoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDataSource.swift; sourceTree = "<group>"; };
-		D278517E2854DB710061DD80 /* TodoAPIImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAPIImpl.swift; sourceTree = "<group>"; };
-		D27851812854E13D0061DD80 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
-		D27851832854E1F40061DD80 /* TodoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryImpl.swift; sourceTree = "<group>"; };
-		D27851862854E5C50061DD80 /* GetTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTodos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D204585B2855E2600030B9F6 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D20458582855E1A70030B9F6 /* Main.xcdatamodeld */,
+				D204585E2855E2F90030B9F6 /* TodoCoreDataSourceImpl.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D204585C2855E29D0030B9F6 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				D20458622855E41A0030B9F6 /* TodoError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		D204585D2855E2A40030B9F6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D20458602855E3E40030B9F6 /* TodoRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		D27851552854CFAC0061DD80 = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +90,11 @@
 		D27851602854CFAC0061DD80 /* KataCoreData1 */ = {
 			isa = PBXGroup;
 			children = (
+				D278516F2854D9D50061DD80 /* Core */,
+				D27851702854D9DA0061DD80 /* Data */,
 				D27851722854D9E70061DD80 /* Presentation */,
 				D27851712854D9E00061DD80 /* Domain */,
-				D27851702854D9DA0061DD80 /* Data */,
-				D278516F2854D9D50061DD80 /* Core */,
 				D27851612854CFAC0061DD80 /* KataCoreData1App.swift */,
-				D27851632854CFAC0061DD80 /* ContentView.swift */,
 				D27851652854CFAD0061DD80 /* Assets.xcassets */,
 				D27851672854CFAD0061DD80 /* Preview Content */,
 			);
@@ -104,9 +128,9 @@
 		D27851712854D9E00061DD80 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				D27851852854E5050061DD80 /* UseCase */,
-				D27851802854E1230061DD80 /* Repository */,
 				D27851752854DAAD0061DD80 /* Model */,
+				D204585D2855E2A40030B9F6 /* Repository */,
+				D204585C2855E29D0030B9F6 /* Error */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -114,6 +138,7 @@
 		D27851722854D9E70061DD80 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D20458642855E44D0030B9F6 /* ContentView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -121,6 +146,7 @@
 		D27851732854DA7C0061DD80 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				D20458662855E50B0030B9F6 /* TodoRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -128,7 +154,7 @@
 		D27851742854DA830061DD80 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				D27851782854DAE00061DD80 /* API */,
+				D204585B2855E2600030B9F6 /* CoreData */,
 				D278517C2854DB190061DD80 /* TodoDataSource.swift */,
 			);
 			path = DataSource;
@@ -140,40 +166,6 @@
 				D27851762854DABE0061DD80 /* ToDo.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D27851782854DAE00061DD80 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				D27851792854DAE50061DD80 /* Entity */,
-				D278517E2854DB710061DD80 /* TodoAPIImpl.swift */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		D27851792854DAE50061DD80 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				D278517A2854DAF90061DD80 /* ToDoEntity.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		D27851802854E1230061DD80 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				D27851812854E13D0061DD80 /* TodoRepository.swift */,
-				D27851832854E1F40061DD80 /* TodoRepositoryImpl.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		D27851852854E5050061DD80 /* UseCase */ = {
-			isa = PBXGroup;
-			children = (
-				D27851862854E5C50061DD80 /* GetTodos.swift */,
-			);
-			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,15 +238,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D278517F2854DB710061DD80 /* TodoAPIImpl.swift in Sources */,
-				D27851872854E5C50061DD80 /* GetTodos.swift in Sources */,
+				D20458672855E50B0030B9F6 /* TodoRepositoryImpl.swift in Sources */,
 				D278517D2854DB190061DD80 /* TodoDataSource.swift in Sources */,
 				D27851772854DABE0061DD80 /* ToDo.swift in Sources */,
-				D27851842854E1F40061DD80 /* TodoRepositoryImpl.swift in Sources */,
-				D27851642854CFAC0061DD80 /* ContentView.swift in Sources */,
-				D27851822854E13D0061DD80 /* TodoRepository.swift in Sources */,
-				D278517B2854DAF90061DD80 /* ToDoEntity.swift in Sources */,
+				D20458652855E44D0030B9F6 /* ContentView.swift in Sources */,
+				D20458632855E41A0030B9F6 /* TodoError.swift in Sources */,
+				D204585F2855E2F90030B9F6 /* TodoCoreDataSourceImpl.swift in Sources */,
+				D204585A2855E1A70030B9F6 /* Main.xcdatamodeld in Sources */,
 				D27851622854CFAC0061DD80 /* KataCoreData1App.swift in Sources */,
+				D20458612855E3E40030B9F6 /* TodoRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +447,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D20458582855E1A70030B9F6 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D20458592855E1A70030B9F6 /* Main.xcdatamodel */,
+			);
+			currentVersion = D20458592855E1A70030B9F6 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D27851562854CFAC0061DD80 /* Project object */;
 }

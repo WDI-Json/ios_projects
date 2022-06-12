@@ -7,8 +7,10 @@
 
 import Foundation
 
-protocol ToDoDataSource {
-    
-    func getTodos() async throws -> [Todo]
-    
+protocol TodoDataSource{
+    func getAll() async throws -> [Todo]
+    func getById(_ id: UUID) async throws -> Todo?
+    func delete(_ id: UUID) async throws -> ()
+    func create(todo: Todo) async throws -> ()
+    func update(id: UUID, todo: Todo) async throws -> ()
 }
