@@ -14,6 +14,8 @@
 		D27851C22855B7CC0061DD80 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851C12855B7CC0061DD80 /* DataController.swift */; };
 		D27851C52855B7FB0061DD80 /* Smoothies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D27851C32855B7FB0061DD80 /* Smoothies.xcdatamodeld */; };
 		D27851C72855C4E50061DD80 /* helpSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851C62855C4E50061DD80 /* helpSelector.swift */; };
+		D27851C92855D83A0061DD80 /* SmoothieRecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851C82855D83A0061DD80 /* SmoothieRecipesView.swift */; };
+		D27851CB2855D9520061DD80 /* AddSmoothieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27851CA2855D9520061DD80 /* AddSmoothieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		D27851C12855B7CC0061DD80 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		D27851C42855B7FB0061DD80 /* Smoothies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Smoothies.xcdatamodel; sourceTree = "<group>"; };
 		D27851C62855C4E50061DD80 /* helpSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpSelector.swift; sourceTree = "<group>"; };
+		D27851C82855D83A0061DD80 /* SmoothieRecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothieRecipesView.swift; sourceTree = "<group>"; };
+		D27851CA2855D9520061DD80 /* AddSmoothieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSmoothieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 		D27851B22855B7C30061DD80 /* kataCoredata3 */ = {
 			isa = PBXGroup;
 			children = (
+				D27851CA2855D9520061DD80 /* AddSmoothieView.swift */,
 				D27851B32855B7C30061DD80 /* kataCoredata3App.swift */,
 				D27851B52855B7C30061DD80 /* ContentView.swift */,
+				D27851C82855D83A0061DD80 /* SmoothieRecipesView.swift */,
 				D27851C62855C4E50061DD80 /* helpSelector.swift */,
 				D27851C12855B7CC0061DD80 /* DataController.swift */,
 				D27851C32855B7FB0061DD80 /* Smoothies.xcdatamodeld */,
@@ -146,10 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27851CB2855D9520061DD80 /* AddSmoothieView.swift in Sources */,
 				D27851B62855B7C30061DD80 /* ContentView.swift in Sources */,
 				D27851C72855C4E50061DD80 /* helpSelector.swift in Sources */,
 				D27851C52855B7FB0061DD80 /* Smoothies.xcdatamodeld in Sources */,
 				D27851C22855B7CC0061DD80 /* DataController.swift in Sources */,
+				D27851C92855D83A0061DD80 /* SmoothieRecipesView.swift in Sources */,
 				D27851B42855B7C30061DD80 /* kataCoredata3App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
