@@ -18,6 +18,9 @@
 		D264F927287C422E006F2A7B /* MyPokedexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264F926287C422E006F2A7B /* MyPokedexView.swift */; };
 		D264F929287C4240006F2A7B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264F928287C4240006F2A7B /* AppState.swift */; };
 		D264F92B287C426C006F2A7B /* PokedexDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D264F92A287C426C006F2A7B /* PokedexDemoApp.swift */; };
+		D264F930287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.46.png in Resources */ = {isa = PBXBuildFile; fileRef = D264F92D287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.46.png */; };
+		D264F931287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.35.png in Resources */ = {isa = PBXBuildFile; fileRef = D264F92E287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.35.png */; };
+		D264F932287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.42.08.png in Resources */ = {isa = PBXBuildFile; fileRef = D264F92F287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.42.08.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		D264F926287C422E006F2A7B /* MyPokedexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPokedexView.swift; sourceTree = "<group>"; };
 		D264F928287C4240006F2A7B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D264F92A287C426C006F2A7B /* PokedexDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexDemoApp.swift; sourceTree = "<group>"; };
+		D264F92D287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2022-07-11 at 13.43.46.png"; sourceTree = "<group>"; };
+		D264F92E287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2022-07-11 at 13.43.35.png"; sourceTree = "<group>"; };
+		D264F92F287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.42.08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2022-07-11 at 13.42.08.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 		D264F8FC287C4135006F2A7B = {
 			isa = PBXGroup;
 			children = (
+				D264F92C287C44C1006F2A7B /* Screenshots */,
 				D264F907287C4135006F2A7B /* PokedexDemo */,
 				D264F906287C4135006F2A7B /* Products */,
 			);
@@ -112,6 +119,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D264F92C287C44C1006F2A7B /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				D264F92F287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.42.08.png */,
+				D264F92E287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.35.png */,
+				D264F92D287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.46.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,6 +190,9 @@
 			files = (
 				D264F910287C4137006F2A7B /* Preview Assets.xcassets in Resources */,
 				D264F90D287C4137006F2A7B /* Assets.xcassets in Resources */,
+				D264F930287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.46.png in Resources */,
+				D264F931287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.43.35.png in Resources */,
+				D264F932287C44EB006F2A7B /* Screenshot 2022-07-11 at 13.42.08.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
