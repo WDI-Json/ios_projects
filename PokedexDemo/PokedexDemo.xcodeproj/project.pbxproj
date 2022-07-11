@@ -49,8 +49,6 @@
 		D264F8FC287C4135006F2A7B = {
 			isa = PBXGroup;
 			children = (
-				D264F92A287C426C006F2A7B /* PokedexDemoApp.swift */,
-				D264F928287C4240006F2A7B /* AppState.swift */,
 				D264F907287C4135006F2A7B /* PokedexDemo */,
 				D264F906287C4135006F2A7B /* Products */,
 			);
@@ -67,6 +65,8 @@
 		D264F907287C4135006F2A7B /* PokedexDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D264F92A287C426C006F2A7B /* PokedexDemoApp.swift */,
+				D264F928287C4240006F2A7B /* AppState.swift */,
 				D264F916287C4160006F2A7B /* API */,
 				D264F919287C4179006F2A7B /* Views */,
 				D264F90C287C4137006F2A7B /* Assets.xcassets */,
