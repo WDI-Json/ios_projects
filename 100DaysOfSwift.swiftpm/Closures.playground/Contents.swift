@@ -128,3 +128,28 @@ prepMultiple {
     let's bake \($1) different \($0)s
     """
 }
+//Returning closures from functions
+//function with no parameters returning a closure
+func bake() -> (String) -> Void {
+    return {
+        print("I'm going to bake \($0)")
+    }
+}
+let bakeStuff = bake()
+bakeStuff("Apple Pie")
+
+//possible but not recommended
+let bakeMoreStuff = bake()("Brownies")
+
+
+func bakeWithCount() -> (String) -> Void {
+    var counter = 1
+    return {
+        print("I'm going to bake \($0)")
+        counter += 1
+    }
+}
+let bakeMultipleStuff = bakeWithCount()
+bakeStuff("Apple Pie")
+bakeStuff("Cherry Pie")
+bakeStuff("Carrot Cake")
