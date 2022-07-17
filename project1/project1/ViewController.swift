@@ -14,6 +14,9 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Storm viewer"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         //watch the '!'. For now it's safe but in future appliances not recommended!
         //remember '!' is force unwrapping of optionals. If it fails, the app crashes.
         let fm = FileManager.default
