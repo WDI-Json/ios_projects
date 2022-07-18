@@ -26,6 +26,11 @@ class ViewController: UITableViewController {
         for item in items {
             if item.hasPrefix("nssl") {
                 pictures.append(item)
+                //sort the list based on numbers ascending
+            //https://developer.apple.com/documentation/foundation/nsstring/1409742-localizedstandardcompare
+                //
+                
+                pictures.sort { $0.localizedStandardCompare($1) == .orderedAscending }
             }
         }
     }
@@ -43,12 +48,15 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 1: try loading the "Detail" view controller and typecasting it to be DetailViewController
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            
             // 2: success! Set its selectedImage property
             vc.selectedImage = pictures[indexPath.row]
-            
+            vc.totalPictures = pictures.count
+            vc.selectedPictureNumber = pictures.firstIndex(of: pictures[indexPath.row]) ?? 0
             // 3: now push it onto the navigation controller
             navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
+
 

@@ -10,18 +10,21 @@ import UIKit
 class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     var selectedImage: String?
+    var selectedPictureNumber = 0
+    var totalPictures = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //unwrapping not necessary because optional is assigned to optional
-        title = selectedImage
+        title = "Picture \(selectedPictureNumber + 1) of \(totalPictures)"//selectedImage
         navigationItem.largeTitleDisplayMode = .never
         
         //unwrap optional selectedImage
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
         }
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
