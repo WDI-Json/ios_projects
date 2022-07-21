@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             score -= 1
         }
         
-        if questionNumber > 2 {
+        if questionNumber == 10 {
             let gameOver = UIAlertController(title: title, message: "Your endscore is \(score)", preferredStyle: .alert)
             gameOver.addAction(UIAlertAction(title: "Game Over", style: .destructive ))
             present(gameOver, animated: true)
