@@ -11,10 +11,11 @@ class ViewController: UIViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
-
+    
     var countries = [String]()
     var score = 0
     var correctAnswer = 0
+    var questionNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,26 +41,31 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
         
-        title = countries[correctAnswer].uppercased()
+        title = "The current score is \(score). Which flag is \(countries[correctAnswer].uppercased())?"
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
+        questionNumber += 1
         
         if sender.tag == correctAnswer {
             title = "Correct!"
             score += 1
-        } else {
-            title = "Wrong."
+        }
+        else {
+            title = "Wrong. The answer should have been \(countries[correctAnswer].uppercased())"
             score -= 1
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
-        
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        
-        present(ac, animated: true)
+        if questionNumber > 2 {
+            let gameOver = UIAlertController(title: title, message: "Your endscore is \(score)", preferredStyle: .alert)
+            gameOver.addAction(UIAlertAction(title: "Game Over", style: .destructive ))
+            present(gameOver, animated: true)
+        } else {
+            let ac = UIAlertController(title: title, message: "Your score is \(score)", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            present(ac, animated: true)
+        }
     }
-    
 }
 
