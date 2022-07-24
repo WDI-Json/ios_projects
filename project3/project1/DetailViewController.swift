@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
             return
         }
         let message = "You downloaded \(selectedPictureNumber + 1) of \(totalPictures)"
-
+        
         //create UIActivityViewController
         let vc = UIActivityViewController(activityItems: [image, message], applicationActivities: [])
         //without this code it will crash on Ipad.

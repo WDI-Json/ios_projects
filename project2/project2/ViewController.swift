@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         button2.layer.borderColor = UIColor.lightGray.cgColor
         button3.layer.borderColor = UIColor.lightGray.cgColor
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        
         askQuestion()
     }
     
@@ -66,6 +68,16 @@ class ViewController: UIViewController {
             ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
             present(ac, animated: true)
         }
+    }
+    
+    @objc func shareTapped() {
+        let message = "My current score is \(score). Join me on this game!"
+
+        //create UIActivityViewController
+        let vc = UIActivityViewController(activityItems: [message], applicationActivities: [])
+        //without this code it will crash on Ipad.
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
     }
 }
 
