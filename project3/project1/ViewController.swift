@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
+    
     var pictures = [String]()
     
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class ViewController: UITableViewController {
             if item.hasPrefix("nssl") {
                 pictures.append(item)
                 //sort the list based on numbers ascending
-            //https://developer.apple.com/documentation/foundation/nsstring/1409742-localizedstandardcompare
+                //https://developer.apple.com/documentation/foundation/nsstring/1409742-localizedstandardcompare
                 //
                 
                 pictures.sort { $0.localizedStandardCompare($1) == .orderedAscending }
@@ -62,7 +62,7 @@ class ViewController: UITableViewController {
     //https://stackoverflow.com/questions/37938722/how-to-implement-share-button-in-swift
     @objc func shareTapped() {
         let shareMessage = "Download this app!"
-
+        
         //create UIActivityViewController
         let vc = UIActivityViewController(activityItems: [shareMessage], applicationActivities: [])
         //without this code it will crash on Ipad.
