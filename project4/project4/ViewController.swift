@@ -73,13 +73,10 @@ class ViewController: UITableViewController, WKNavigationDelegate {
         webView.load(URLRequest(url: url))
     }
     
-    func isWebsiteAllowed(_ url: String) -> Bool {
-        websitesAllowed.filter { $0.contains(url) }.count > 0
-    }
-    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
     }
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress" {
             progressView.progress = Float(webView.estimatedProgress)
@@ -88,17 +85,15 @@ class ViewController: UITableViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         let url = navigationAction.request.url
-        if let url = url?.host {
-            if isWebsiteAllowed(url) {
-                decisionHandler(.allow)
-                return
+
+        if let host = url?.host {
+            for website in websitesAllowed {
+                if host.contains(website) {
+                    decisionHandler(.allow)
+                    return
+                }
             }
         }
-        let message = "The requested page is not allowed. Contact your systemadmin."
-        let acNotAllowed = UIAlertController(title: "Forbidden", message: message, preferredStyle: .alert)
-        acNotAllowed.addAction(UIAlertAction(title: "Return", style: .cancel, handler: nil))
-        present(acNotAllowed, animated: true)
         decisionHandler(.cancel)
     }
 }
-
