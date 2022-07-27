@@ -27,30 +27,29 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let spacer = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         
+        let goForward = UIBarButtonItem(barButtonSystemItem: UIImage(systemName: "chevron.forward"), target: webView, action: #selector(webView.goForward))
+        let goBack = UIBarButtonItem(barButtonSystemItem: UIImage(systemName: "chevron.forward"), target: webView, action: #selector(webView.goBack))
+        
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
         let progressButton = UIBarButtonItem(customView: progressView)
         
-        toolbarItems = [progressButton, spacer, refresh]
+        toolbarItems = [progressButton, spacer, goBack, goForward,refresh]
         navigationController?.isToolbarHidden = false
         
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
-        let url = URL(string: "https://" + websites[2])!
+        let url = URL(string: "https://" + websites[1])!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
     
     @objc func openTapped() {
         let ac = UIAlertController(title: "Open page...", message: nil, preferredStyle: .actionSheet)
-        
-//        ac.addAction(UIAlertAction(title: "apple.com", style: .default, handler: openPage))
-//        ac.addAction(UIAlertAction(title: "HackingWithSwift.com", style: .default, handler: openPage))
         for website in websites {
             ac.addAction(UIAlertAction(title: website, style: .default, handler: openPage))
         }
         ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        
         //ipad
         ac.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
         present(ac, animated: true)
