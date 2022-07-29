@@ -27,7 +27,6 @@ class ViewController: UITableViewController {
         if allWords.isEmpty {
             allWords = ["silkworm"]
         }
-        
         initGameState()
     }
     
@@ -67,7 +66,7 @@ class ViewController: UITableViewController {
             if isOriginal(word: lowerAnswer) {
                 if isReal(word: lowerAnswer) {
                     usedWords.insert(lowerAnswer, at: 0)
-                    
+
                     let indexPath = IndexPath(row: 0, section: 0)
                     tableView.insertRows(at: [indexPath], with: .automatic)
                     
@@ -83,6 +82,7 @@ class ViewController: UITableViewController {
             showErrorMessage(errorTitle: "Word not possible", errorMessage: "You can't spell that word from \(title)")
         }
     }
+    
     func showErrorMessage(errorTitle: String, errorMessage: String ) {
         let ac = UIAlertController(title: errorTitle, message: errorMessage, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
