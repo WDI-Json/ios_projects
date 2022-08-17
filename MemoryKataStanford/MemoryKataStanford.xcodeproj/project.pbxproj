@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D2999B4F2860E48100B0E5AA /* MemoryKataStanfordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2999B4E2860E48100B0E5AA /* MemoryKataStanfordApp.swift */; };
 		D2999B512860E48100B0E5AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2999B502860E48100B0E5AA /* ContentView.swift */; };
-		D2999B532860E48200B0E5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2999B522860E48200B0E5AA /* Assets.xcassets */; };
 		D2999B562860E48200B0E5AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2999B552860E48200B0E5AA /* Preview Assets.xcassets */; };
 		D2999B5D2860E4A500B0E5AA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2999B5C2860E4A500B0E5AA /* Card.swift */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		D2999B4B2860E48100B0E5AA /* MemoryKataStanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryKataStanford.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2999B4E2860E48100B0E5AA /* MemoryKataStanfordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryKataStanfordApp.swift; sourceTree = "<group>"; };
 		D2999B502860E48100B0E5AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D2999B522860E48200B0E5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2999B552860E48200B0E5AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2999B5C2860E4A500B0E5AA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +54,6 @@
 				D2999B4E2860E48100B0E5AA /* MemoryKataStanfordApp.swift */,
 				D2999B502860E48100B0E5AA /* ContentView.swift */,
 				D2999B5C2860E4A500B0E5AA /* Card.swift */,
-				D2999B522860E48200B0E5AA /* Assets.xcassets */,
 				D2999B542860E48200B0E5AA /* Preview Content */,
 			);
 			path = MemoryKataStanford;
@@ -129,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2999B562860E48200B0E5AA /* Preview Assets.xcassets in Resources */,
-				D2999B532860E48200B0E5AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +264,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryKataStanford/Preview Content\"";
@@ -297,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryKataStanford/Preview Content\"";

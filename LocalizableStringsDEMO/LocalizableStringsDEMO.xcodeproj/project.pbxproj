@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2463B992899086F008F5AC3 /* LoginScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2463B982899086F008F5AC3 /* LoginScreenApp.swift */; };
-		D2463B9B2899086F008F5AC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2463B9A2899086F008F5AC3 /* ContentView.swift */; };
-		D2463B9D28990870008F5AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2463B9C28990870008F5AC3 /* Assets.xcassets */; };
-		D2463BA028990870008F5AC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2463B9F28990870008F5AC3 /* Preview Assets.xcassets */; };
+		D262500228AD599600407D80 /* LocalizableStringsDEMOApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D262500128AD599600407D80 /* LocalizableStringsDEMOApp.swift */; };
+		D262500428AD599600407D80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D262500328AD599600407D80 /* ContentView.swift */; };
+		D262500628AD599600407D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D262500528AD599600407D80 /* Assets.xcassets */; };
+		D262500928AD599600407D80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D262500828AD599600407D80 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D2463B952899086F008F5AC3 /* LoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2463B982899086F008F5AC3 /* LoginScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenApp.swift; sourceTree = "<group>"; };
-		D2463B9A2899086F008F5AC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D2463B9C28990870008F5AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2463B9F28990870008F5AC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2624FFE28AD599600407D80 /* LocalizableStringsDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizableStringsDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D262500128AD599600407D80 /* LocalizableStringsDEMOApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStringsDEMOApp.swift; sourceTree = "<group>"; };
+		D262500328AD599600407D80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D262500528AD599600407D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D262500828AD599600407D80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D2463B922899086F008F5AC3 /* Frameworks */ = {
+		D2624FFB28AD599600407D80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,37 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D2463B8C2899086F008F5AC3 = {
+		D2624FF528AD599600407D80 = {
 			isa = PBXGroup;
 			children = (
-				D2463B972899086F008F5AC3 /* LoginScreen */,
-				D2463B962899086F008F5AC3 /* Products */,
+				D262500028AD599600407D80 /* LocalizableStringsDEMO */,
+				D2624FFF28AD599600407D80 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D2463B962899086F008F5AC3 /* Products */ = {
+		D2624FFF28AD599600407D80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2463B952899086F008F5AC3 /* LoginScreen.app */,
+				D2624FFE28AD599600407D80 /* LocalizableStringsDEMO.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2463B972899086F008F5AC3 /* LoginScreen */ = {
+		D262500028AD599600407D80 /* LocalizableStringsDEMO */ = {
 			isa = PBXGroup;
 			children = (
-				D2463B982899086F008F5AC3 /* LoginScreenApp.swift */,
-				D2463B9A2899086F008F5AC3 /* ContentView.swift */,
-				D2463B9C28990870008F5AC3 /* Assets.xcassets */,
-				D2463B9E28990870008F5AC3 /* Preview Content */,
+				D262500128AD599600407D80 /* LocalizableStringsDEMOApp.swift */,
+				D262500328AD599600407D80 /* ContentView.swift */,
+				D262500528AD599600407D80 /* Assets.xcassets */,
+				D262500728AD599600407D80 /* Preview Content */,
 			);
-			path = LoginScreen;
+			path = LocalizableStringsDEMO;
 			sourceTree = "<group>";
 		};
-		D2463B9E28990870008F5AC3 /* Preview Content */ = {
+		D262500728AD599600407D80 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D2463B9F28990870008F5AC3 /* Preview Assets.xcassets */,
+				D262500828AD599600407D80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -70,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2463B942899086F008F5AC3 /* LoginScreen */ = {
+		D2624FFD28AD599600407D80 /* LocalizableStringsDEMO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2463BA328990870008F5AC3 /* Build configuration list for PBXNativeTarget "LoginScreen" */;
+			buildConfigurationList = D262500C28AD599600407D80 /* Build configuration list for PBXNativeTarget "LocalizableStringsDEMO" */;
 			buildPhases = (
-				D2463B912899086F008F5AC3 /* Sources */,
-				D2463B922899086F008F5AC3 /* Frameworks */,
-				D2463B932899086F008F5AC3 /* Resources */,
+				D2624FFA28AD599600407D80 /* Sources */,
+				D2624FFB28AD599600407D80 /* Frameworks */,
+				D2624FFC28AD599600407D80 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LoginScreen;
-			productName = LoginScreen;
-			productReference = D2463B952899086F008F5AC3 /* LoginScreen.app */;
+			name = LocalizableStringsDEMO;
+			productName = LocalizableStringsDEMO;
+			productReference = D2624FFE28AD599600407D80 /* LocalizableStringsDEMO.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D2463B8D2899086F008F5AC3 /* Project object */ = {
+		D2624FF628AD599600407D80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					D2463B942899086F008F5AC3 = {
+					D2624FFD28AD599600407D80 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = D2463B902899086F008F5AC3 /* Build configuration list for PBXProject "LoginScreen" */;
+			buildConfigurationList = D2624FF928AD599600407D80 /* Build configuration list for PBXProject "LocalizableStringsDEMO" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = D2463B8C2899086F008F5AC3;
-			productRefGroup = D2463B962899086F008F5AC3 /* Products */;
+			mainGroup = D2624FF528AD599600407D80;
+			productRefGroup = D2624FFF28AD599600407D80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2463B942899086F008F5AC3 /* LoginScreen */,
+				D2624FFD28AD599600407D80 /* LocalizableStringsDEMO */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D2463B932899086F008F5AC3 /* Resources */ = {
+		D2624FFC28AD599600407D80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2463BA028990870008F5AC3 /* Preview Assets.xcassets in Resources */,
-				D2463B9D28990870008F5AC3 /* Assets.xcassets in Resources */,
+				D262500928AD599600407D80 /* Preview Assets.xcassets in Resources */,
+				D262500628AD599600407D80 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D2463B912899086F008F5AC3 /* Sources */ = {
+		D2624FFA28AD599600407D80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2463B9B2899086F008F5AC3 /* ContentView.swift in Sources */,
-				D2463B992899086F008F5AC3 /* LoginScreenApp.swift in Sources */,
+				D262500428AD599600407D80 /* ContentView.swift in Sources */,
+				D262500228AD599600407D80 /* LocalizableStringsDEMOApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D2463BA128990870008F5AC3 /* Debug */ = {
+		D262500A28AD599600407D80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,7 +205,7 @@
 			};
 			name = Debug;
 		};
-		D2463BA228990870008F5AC3 /* Release */ = {
+		D262500B28AD599600407D80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,14 +259,14 @@
 			};
 			name = Release;
 		};
-		D2463BA428990870008F5AC3 /* Debug */ = {
+		D262500D28AD599600407D80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LoginScreen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LocalizableStringsDEMO/Preview Content\"";
 				DEVELOPMENT_TEAM = ZL4KR75454;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wutu..LoginScreen;
+				PRODUCT_BUNDLE_IDENTIFIER = wutu.LocalizableStringsDEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -288,14 +288,14 @@
 			};
 			name = Debug;
 		};
-		D2463BA528990870008F5AC3 /* Release */ = {
+		D262500E28AD599600407D80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LoginScreen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LocalizableStringsDEMO/Preview Content\"";
 				DEVELOPMENT_TEAM = ZL4KR75454;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wutu..LoginScreen;
+				PRODUCT_BUNDLE_IDENTIFIER = wutu.LocalizableStringsDEMO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2463B902899086F008F5AC3 /* Build configuration list for PBXProject "LoginScreen" */ = {
+		D2624FF928AD599600407D80 /* Build configuration list for PBXProject "LocalizableStringsDEMO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2463BA128990870008F5AC3 /* Debug */,
-				D2463BA228990870008F5AC3 /* Release */,
+				D262500A28AD599600407D80 /* Debug */,
+				D262500B28AD599600407D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2463BA328990870008F5AC3 /* Build configuration list for PBXNativeTarget "LoginScreen" */ = {
+		D262500C28AD599600407D80 /* Build configuration list for PBXNativeTarget "LocalizableStringsDEMO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2463BA428990870008F5AC3 /* Debug */,
-				D2463BA528990870008F5AC3 /* Release */,
+				D262500D28AD599600407D80 /* Debug */,
+				D262500E28AD599600407D80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D2463B8D2899086F008F5AC3 /* Project object */;
+	rootObject = D2624FF628AD599600407D80 /* Project object */;
 }
