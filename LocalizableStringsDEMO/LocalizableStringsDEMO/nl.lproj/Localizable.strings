@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  LocalizableStringsDEMO
+
+  Created by Wouter on 17/08/2022.
+  
+*/
+
+"listItemtext1" = "Wat tekst";
+"listItemtext2" = "Een verhaal";
+"listItemtext3" = "Demo met gebruik van gelocaliseerde strings!";
+"title" = "Gelocaliseerde strings";

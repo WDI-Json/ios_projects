@@ -11,18 +11,24 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List{
-                Text("Some text")
+                Text("listItemtext1".localizedString())
                     .padding()
-                Text("A story")
+                Text("listItemtext2".localizedString())
                     .padding()
-                Text("Demo using localizable strings!")
+                Text("listItemtext3".localizedString())
                     .padding()
             }
-            .navigationTitle("Localizable strings")
+            .navigationTitle("title".localizedString())
         }
     }
 }
 
+extension String {
+
+    func localizedString(comment: String = "") -> String {
+        NSLocalizedString(self, comment: comment)
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
