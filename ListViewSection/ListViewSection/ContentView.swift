@@ -17,10 +17,9 @@ struct ContentView: View {
                     Section (
                         header: Text("Week \(weekNumber)")
                             .headerProminence(.increased)) {
-//                                ForEach(dateArray, id: \.self) { date in
-//                                    CardWithDate(date: date)
-//
-//                                }
+                                ForEach(viewmodel.dateDict[weekNumber]!, id: \.self) { date in
+                                    CardWithDate(date: date)
+                                }
                             }
                 }
                 
