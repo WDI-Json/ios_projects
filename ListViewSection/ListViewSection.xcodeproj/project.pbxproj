@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D21D7FFD28C0D354000BC1B9 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D7FFC28C0D354000BC1B9 /* DateFormatter.swift */; };
+		D21D800328C0E7B4000BC1B9 /* Contentview2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D800228C0E7B4000BC1B9 /* Contentview2.swift */; };
 		D26CD7FA28BE41CB00C8F603 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26CD7F928BE41CB00C8F603 /* Date.swift */; };
 		D26CD7FC28BE41E100C8F603 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26CD7FB28BE41E100C8F603 /* ContentViewModel.swift */; };
 		D2F756C328B7B43E00AD9C84 /* ListViewSectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F756C228B7B43E00AD9C84 /* ListViewSectionApp.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		D21D7FFC28C0D354000BC1B9 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		D21D800228C0E7B4000BC1B9 /* Contentview2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contentview2.swift; sourceTree = "<group>"; };
 		D2246F6428BFA2F000B83E90 /* testdatum.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = testdatum.playground; path = ../../../../../Desktop/testdatum.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D26CD7F928BE41CB00C8F603 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		D26CD7FB28BE41E100C8F603 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				D2F756C228B7B43E00AD9C84 /* ListViewSectionApp.swift */,
 				D2F756C428B7B43E00AD9C84 /* ContentView.swift */,
+				D21D800228C0E7B4000BC1B9 /* Contentview2.swift */,
 				D2246F6428BFA2F000B83E90 /* testdatum.playground */,
 				D26CD7FB28BE41E100C8F603 /* ContentViewModel.swift */,
 				D26CD7F928BE41CB00C8F603 /* Date.swift */,
@@ -153,6 +156,7 @@
 				D26CD7FA28BE41CB00C8F603 /* Date.swift in Sources */,
 				D2F756C328B7B43E00AD9C84 /* ListViewSectionApp.swift in Sources */,
 				D21D7FFD28C0D354000BC1B9 /* DateFormatter.swift in Sources */,
+				D21D800328C0E7B4000BC1B9 /* Contentview2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

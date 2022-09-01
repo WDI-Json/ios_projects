@@ -9,10 +9,18 @@ import Foundation
 
 class ContentViewModel: ObservableObject {
     
-    @Published var dateDict: [Int: [Date]]
+    //    @Published var dateDict: [Int: [Date]]
+    @Published var dateStructs: [WeekWithDates] = []
     
     init() {
-        dateDict = Dictionary(grouping: Date.dateRange(from: Date(), to: Date().endOfMonth(addMonth: 2)), by: { $0.weekNumber() })
+        let dateDict = Dictionary(grouping: Date.dateRange(from: Date(), to: Date().endOfMonth(addMonth: 1)), by: { $0.weekNumber() })
+        //        self.dateStructs = dateDict.map { (weekNumber, dates) in WeekWithDates(weekNumber: weekNumber, dates: dates) }
+        self.dateStructs = dateDict.map { WeekWithDates(weekNumber: $0, dates: $1) }.sorted(by: { $0.weekNumber < $1.weekNumber } )
     }
 }
 
+struct WeekWithDates: Identifiable {
+    var id: Int { weekNumber }
+    var weekNumber: Int
+    let dates: [Date]
+}
