@@ -8,43 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewmodel = ContentViewModel()
     
     var body: some View {
         NavigationView {
             List {
-                CardWithDate()
-                CardWithDate()
-                CardWithDate()
-            }
-            .navigationTitle("Reservations")
-        }
-    }
-    
-    func CardWithDate() -> some View {
-        return Section(
-            header: Text("Week 1")
-                .headerProminence(.increased)) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text("Do 25 augustus")
-                                .fontWeight(.bold)
-                                .foregroundColor(.primary)
-                                .padding(.vertical)
-                            Text("Arcady Kantoor")
-                                .font(.caption)
-                                .foregroundColor(.secondary)
-                                .padding(.vertical)
-                            Image(systemName: "person.crop.square")
-                                .imageScale(.medium)
-                                .font(.system(size: 60))
-                                .padding(.bottom)
-                        }
-                    }
-                    .padding(.horizontal)
-                    
+                ForEach(viewmodel.dateDict.keys.sorted(), id: \.self) { weekNumber in
+                    Section (
+                        header: Text("Week \(weekNumber)")
+                            .headerProminence(.increased)) {
+//                                ForEach(dateArray, id: \.self) { date in
+//                                    CardWithDate(date: date)
+//
+//                                }
+                            }
                 }
+                
+            }
+        }
+        .navigationTitle("Reservations")
     }
 }
+
+func CardWithDate(date: Date) -> some View {
+
+    HStack {
+        VStack(alignment: .leading) {
+            Text("\(date.formatToString(using: .formatddMMyy))")
+                .fontWeight(.bold)
+                .foregroundColor(.primary)
+                .padding(.vertical)
+            Text("Arcady Kantoor")
+                .font(.caption)
+                .foregroundColor(.secondary)
+                .padding(.vertical)
+            Image(systemName: "person.crop.square")
+                .imageScale(.medium)
+                .font(.system(size: 60))
+                .padding(.bottom)
+        }
+    }
+    .padding(.horizontal)
+    
+    
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
