@@ -23,7 +23,6 @@ struct AvatarGroup: View {
         "Maximillian Kievitsky"]
     
     @State var maxItemsForGroup: Int = 0
-//    let maxItems: Int = 6
     var spacing: CGFloat = 8
     @State var isViewDisplayed = false
     var body: some View {
@@ -46,8 +45,7 @@ struct AvatarGroup: View {
     }
     
     private func getMaxItemsForGroup(availableSize: CGFloat) -> Int {
-        var fittingCount = Int(((availableSize - spacing) / (56 + spacing)))
-//        fittingCount = fittingCount < maxItems ? fittingCount : maxItems
+        let fittingCount = Int(((availableSize - spacing) / (56 + spacing)))
         DispatchQueue.main.async {
             self.maxItemsForGroup = fittingCount
         }
