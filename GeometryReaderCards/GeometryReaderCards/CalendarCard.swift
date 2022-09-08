@@ -18,11 +18,11 @@ struct CalendarCard: View {
         ZStack {
             Color.white
             if isReserved {
-                ZStack (alignment: .leading ) {
+                HStack {
                     Color.purple
+                        .frame(width: 8)
+                    Spacer()
                 }
-                .frame(width: 16, height: 208)
-                .padding(.trailing, 340)
             }
             HStack {
                 VStack(alignment: .leading) {
@@ -36,7 +36,6 @@ struct CalendarCard: View {
                             .padding(.leading)
                     }
                     Text(workspaceName)
-//                        .font(Font.poppinsRegular(size: 13))
                         .foregroundColor(.gray)
                         .padding(.horizontal)
                         .padding()
@@ -46,7 +45,6 @@ struct CalendarCard: View {
                 }
             }
         }
-        .frame(width: 343, height: 208)
         .cornerRadius(24)
         }
     }
@@ -57,6 +55,7 @@ struct CalendarCard_Previews: PreviewProvider {
         ZStack {
             Color.gray
             CalendarCard(date: Date(), isReserved: true, workspaceName: "Arcady Kantoor", reservations: 8, seatsAvailable: 12)
+                .frame(width: 343, height: 208)
         }
     }
 }
