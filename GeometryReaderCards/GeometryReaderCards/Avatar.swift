@@ -19,12 +19,12 @@ struct Avatar: View {
         ZStack {
             Image(systemName: "square.fill")
                 .imageScale(.medium)
-                .font(.system(size: 56))
+                .font(.system(size: 48))
                 .foregroundColor(defaultColor.randomElement())
             Text(getInitials(name: name))
                 .foregroundColor(.white)
         }
-        .frame(width: 56, height: 56)
+        .frame(width: 48, height: 48)
     }
     
     private func getInitials(name: String?) -> String {

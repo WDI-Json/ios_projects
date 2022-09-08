@@ -17,12 +17,12 @@ struct LeftoverAvatar: View {
         ZStack {
             Image(systemName: "square.fill")
                 .imageScale(.medium)
-                .font(.system(size: 56))
+                .font(.system(size: 48))
                 .foregroundColor(.gray)
             Text("+ \(count)")
                 .foregroundColor(.black)
         }
-        .frame(width: 56, height: 56)
+        .frame(width: 48, height: 48)
     }
 }
 

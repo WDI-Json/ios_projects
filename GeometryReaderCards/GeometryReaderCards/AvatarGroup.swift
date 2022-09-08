@@ -21,29 +21,36 @@ struct AvatarGroup: View {
         "Max van Verstappen",
         "Leonardo Di Firenze",
         "Maximillian Kievitsky"]
+    
     @State var maxItemsForGroup: Int = 0
-    let maxItems: Int = 11
-    var spacing: CGFloat = 20
+    let maxItems: Int = 6
+    var spacing: CGFloat = 8
     @State var isViewDisplayed = false
     var body: some View {
         GeometryReader { geometry in
+            
             HStack {
                     ForEach(
                         avatarArray[0..<getMaxItemsForGroup(availableSize: geometry.size.width)],
                         id: \.self)
                     { name in
+                        let index = avatarArray.firstIndex(of: name) ?? 0
+                        if (index <= getMaxItemsForGroup(availableSize: geometry.size.width)) {
                             Avatar(name: name)
+                        }
                     }
                     LeftoverAvatar(count: avatarArray.count - maxItemsForGroup)
-                        .frame(width: 56, height: 56)
+                        .frame(width: 48, height: 48)
                 }
         }
     }
     
     private func getMaxItemsForGroup(availableSize: CGFloat) -> Int {
-        var fittingCount = Int((availableSize - spacing / (56 + spacing)))
+        var fittingCount = Int(((availableSize - spacing) / (56 + spacing)))
         fittingCount = fittingCount < maxItems ? fittingCount : maxItems
-        self.maxItemsForGroup = fittingCount
+        DispatchQueue.main.async {
+            self.maxItemsForGroup = fittingCount
+        }
         return fittingCount
     }
 }
