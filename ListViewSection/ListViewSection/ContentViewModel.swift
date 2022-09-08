@@ -7,6 +7,13 @@
 
 import Foundation
 
+struct WeekWithDates: Identifiable {
+    var id: Int { weekNumber }
+    var weekNumber: Int
+    let dates: [Date]
+}
+
+
 class ContentViewModel: ObservableObject {
     
     //    @Published var dateDict: [Int: [Date]]
@@ -19,8 +26,3 @@ class ContentViewModel: ObservableObject {
     }
 }
 
-struct WeekWithDates: Identifiable {
-    var id: Int { weekNumber }
-    var weekNumber: Int
-    let dates: [Date]
-}
