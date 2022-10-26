@@ -19,6 +19,7 @@
 		D2F756C528B7B43E00AD9C84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F756C428B7B43E00AD9C84 /* ContentView.swift */; };
 		D2F756C728B7B43F00AD9C84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F756C628B7B43F00AD9C84 /* Assets.xcassets */; };
 		D2F756CA28B7B43F00AD9C84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F756C928B7B43F00AD9C84 /* Preview Assets.xcassets */; };
+		D2FF4D3F290969B9008DD77F /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF4D3E290969B9008DD77F /* SheetView.swift */; };
 		D2FFD4E828F5486400DACDA0 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FFD4E728F5486400DACDA0 /* test.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		D2F756C428B7B43E00AD9C84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2F756C628B7B43F00AD9C84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2F756C928B7B43F00AD9C84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2FF4D3E290969B9008DD77F /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		D2FFD4E728F5486400DACDA0 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				D26CD7F928BE41CB00C8F603 /* Date.swift */,
 				D21D7FFC28C0D354000BC1B9 /* DateFormatter.swift */,
 				D26F358E28F809E400817BE6 /* InputView.swift */,
+				D2FF4D3E290969B9008DD77F /* SheetView.swift */,
 				D2EA2911290801BF000A57E7 /* DatePickerView.swift */,
 				D2F756C628B7B43F00AD9C84 /* Assets.xcassets */,
 				D2F756C828B7B43F00AD9C84 /* Preview Content */,
@@ -174,6 +177,7 @@
 				D21D7FFD28C0D354000BC1B9 /* DateFormatter.swift in Sources */,
 				D26F358F28F809E400817BE6 /* InputView.swift in Sources */,
 				D244B91228F40AF20083D039 /* EmptyView.swift in Sources */,
+				D2FF4D3F290969B9008DD77F /* SheetView.swift in Sources */,
 				D21D800328C0E7B4000BC1B9 /* Contentview2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
