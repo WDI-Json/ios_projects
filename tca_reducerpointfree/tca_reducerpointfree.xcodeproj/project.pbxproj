@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D226414029C8DF9F00BAD3AA /* EnumKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */; };
+		D24FD23C29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */; };
+		D24FD23E29BA0A8E00E7BD18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD23D29BA0A8E00E7BD18 /* ContentView.swift */; };
+		D24FD24029BA0A9000E7BD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24FD23F29BA0A9000E7BD18 /* Assets.xcassets */; };
+		D24FD24329BA0A9000E7BD18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24FD24229BA0A9000E7BD18 /* Preview Assets.xcassets */; };
+		D24FD24A29BA0AA700E7BD18 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24929BA0AA700E7BD18 /* AppState.swift */; };
+		D24FD24D29BA0BA500E7BD18 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24C29BA0BA500E7BD18 /* CounterView.swift */; };
+		D24FD24F29BA0C8B00E7BD18 /* PrimeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */; };
+		D24FD25129BA0D2800E7BD18 /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */; };
+		D24FD25329BA0D6E00E7BD18 /* FavoritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */; };
+		D24FD25529BA0D9A00E7BD18 /* FavoritePrimesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25429BA0D9A00E7BD18 /* FavoritePrimesState.swift */; };
+		D24FD25729BA0DB100E7BD18 /* AppState+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25629BA0DB100E7BD18 /* AppState+Extensions.swift */; };
+		D24FD25929BA0E1A00E7BD18 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */; };
+		D24FD25B29BA0EAB00E7BD18 /* WolframProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */; };
+		D24FD25D29BA0ECD00E7BD18 /* WolframAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */; };
+		D24FD25F29BA0EED00E7BD18 /* WolframModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25E29BA0EED00E7BD18 /* WolframModel.swift */; };
+		D24FD26329BA141700E7BD18 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26229BA141700E7BD18 /* Store.swift */; };
+		D24FD26629BA180100E7BD18 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26529BA180000E7BD18 /* AppAction.swift */; };
+		D24FD26829BA182E00E7BD18 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26729BA182E00E7BD18 /* AppReducer.swift */; };
+		D24FD26A29BA2C4B00E7BD18 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26929BA2C4B00E7BD18 /* CounterAction.swift */; };
+		D24FD26C29BA2C5500E7BD18 /* PrimeModalAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26B29BA2C5500E7BD18 /* PrimeModalAction.swift */; };
+		D24FD27029BA2EE200E7BD18 /* FavoritePrimesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26F29BA2EE200E7BD18 /* FavoritePrimesAction.swift */; };
+		D2FA2B9C29BBB22C0084B627 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA2B9B29BBB22C0084B627 /* CounterReducer.swift */; };
+		D2FA2B9E29BBB2320084B627 /* PrimeModalReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA2B9D29BBB2320084B627 /* PrimeModalReducer.swift */; };
+		D2FA2BA029BBB29A0084B627 /* FavoritePrimesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA2B9F29BBB29A0084B627 /* FavoritePrimesReducer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumKeyPath.swift; sourceTree = "<group>"; };
+		D24FD23829BA0A8E00E7BD18 /* tca_reducerpointfree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tca_reducerpointfree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tca_reducerpointfreeApp.swift; sourceTree = "<group>"; };
+		D24FD23D29BA0A8E00E7BD18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D24FD23F29BA0A9000E7BD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D24FD24229BA0A9000E7BD18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D24FD24929BA0AA700E7BD18 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D24FD24C29BA0BA500E7BD18 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeAlert.swift; sourceTree = "<group>"; };
+		D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
+		D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesView.swift; sourceTree = "<group>"; };
+		D24FD25429BA0D9A00E7BD18 /* FavoritePrimesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesState.swift; sourceTree = "<group>"; };
+		D24FD25629BA0DB100E7BD18 /* AppState+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+Extensions.swift"; sourceTree = "<group>"; };
+		D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframProvider.swift; sourceTree = "<group>"; };
+		D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframAPI.swift; sourceTree = "<group>"; };
+		D24FD25E29BA0EED00E7BD18 /* WolframModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframModel.swift; sourceTree = "<group>"; };
+		D24FD26229BA141700E7BD18 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D24FD26529BA180000E7BD18 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		D24FD26729BA182E00E7BD18 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		D24FD26929BA2C4B00E7BD18 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
+		D24FD26B29BA2C5500E7BD18 /* PrimeModalAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeModalAction.swift; sourceTree = "<group>"; };
+		D24FD26F29BA2EE200E7BD18 /* FavoritePrimesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesAction.swift; sourceTree = "<group>"; };
+		D2FA2B9B29BBB22C0084B627 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		D2FA2B9D29BBB2320084B627 /* PrimeModalReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeModalReducer.swift; sourceTree = "<group>"; };
+		D2FA2B9F29BBB29A0084B627 /* FavoritePrimesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesReducer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D24FD23529BA0A8E00E7BD18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D24FD22F29BA0A8E00E7BD18 = {
+			isa = PBXGroup;
+			children = (
+				D24FD23A29BA0A8E00E7BD18 /* tca_reducerpointfree */,
+				D24FD23929BA0A8E00E7BD18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D24FD23929BA0A8E00E7BD18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD23829BA0A8E00E7BD18 /* tca_reducerpointfree.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D24FD23A29BA0A8E00E7BD18 /* tca_reducerpointfree */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */,
+				D24FD23D29BA0A8E00E7BD18 /* ContentView.swift */,
+				D24FD26029BA0EF400E7BD18 /* Wolfram */,
+				D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */,
+				D24FD26E29BA2EA000E7BD18 /* FavoritePrimes */,
+				D24FD26D29BA2C5E00E7BD18 /* PrimeModal */,
+				D24FD26429BA17F300E7BD18 /* Counter */,
+				D24FD26129BA136B00E7BD18 /* AppState */,
+				D24FD26229BA141700E7BD18 /* Store.swift */,
+				D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */,
+				D24FD23F29BA0A9000E7BD18 /* Assets.xcassets */,
+				D24FD24129BA0A9000E7BD18 /* Preview Content */,
+			);
+			path = tca_reducerpointfree;
+			sourceTree = "<group>";
+		};
+		D24FD24129BA0A9000E7BD18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD24229BA0A9000E7BD18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D24FD26029BA0EF400E7BD18 /* Wolfram */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */,
+				D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */,
+				D24FD25E29BA0EED00E7BD18 /* WolframModel.swift */,
+			);
+			path = Wolfram;
+			sourceTree = "<group>";
+		};
+		D24FD26129BA136B00E7BD18 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD24929BA0AA700E7BD18 /* AppState.swift */,
+				D24FD26529BA180000E7BD18 /* AppAction.swift */,
+				D24FD26729BA182E00E7BD18 /* AppReducer.swift */,
+				D24FD25629BA0DB100E7BD18 /* AppState+Extensions.swift */,
+				D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		D24FD26429BA17F300E7BD18 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD24C29BA0BA500E7BD18 /* CounterView.swift */,
+				D24FD26929BA2C4B00E7BD18 /* CounterAction.swift */,
+				D2FA2B9B29BBB22C0084B627 /* CounterReducer.swift */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		D24FD26D29BA2C5E00E7BD18 /* PrimeModal */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */,
+				D24FD26B29BA2C5500E7BD18 /* PrimeModalAction.swift */,
+				D2FA2B9D29BBB2320084B627 /* PrimeModalReducer.swift */,
+			);
+			path = PrimeModal;
+			sourceTree = "<group>";
+		};
+		D24FD26E29BA2EA000E7BD18 /* FavoritePrimes */ = {
+			isa = PBXGroup;
+			children = (
+				D24FD25429BA0D9A00E7BD18 /* FavoritePrimesState.swift */,
+				D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */,
+				D24FD26F29BA2EE200E7BD18 /* FavoritePrimesAction.swift */,
+				D2FA2B9F29BBB29A0084B627 /* FavoritePrimesReducer.swift */,
+			);
+			path = FavoritePrimes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D24FD23729BA0A8E00E7BD18 /* tca_reducerpointfree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24FD24629BA0A9000E7BD18 /* Build configuration list for PBXNativeTarget "tca_reducerpointfree" */;
+			buildPhases = (
+				D24FD23429BA0A8E00E7BD18 /* Sources */,
+				D24FD23529BA0A8E00E7BD18 /* Frameworks */,
+				D24FD23629BA0A8E00E7BD18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tca_reducerpointfree;
+			productName = tca_reducerpointfree;
+			productReference = D24FD23829BA0A8E00E7BD18 /* tca_reducerpointfree.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D24FD23029BA0A8E00E7BD18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D24FD23729BA0A8E00E7BD18 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = D24FD23329BA0A8E00E7BD18 /* Build configuration list for PBXProject "tca_reducerpointfree" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D24FD22F29BA0A8E00E7BD18;
+			packageReferences = (
+			);
+			productRefGroup = D24FD23929BA0A8E00E7BD18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D24FD23729BA0A8E00E7BD18 /* tca_reducerpointfree */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D24FD23629BA0A8E00E7BD18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24FD24329BA0A9000E7BD18 /* Preview Assets.xcassets in Resources */,
+				D24FD24029BA0A9000E7BD18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D24FD23429BA0A8E00E7BD18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24FD24A29BA0AA700E7BD18 /* AppState.swift in Sources */,
+				D2FA2B9C29BBB22C0084B627 /* CounterReducer.swift in Sources */,
+				D24FD26C29BA2C5500E7BD18 /* PrimeModalAction.swift in Sources */,
+				D24FD25D29BA0ECD00E7BD18 /* WolframAPI.swift in Sources */,
+				D2FA2B9E29BBB2320084B627 /* PrimeModalReducer.swift in Sources */,
+				D24FD25929BA0E1A00E7BD18 /* NumberFormatter.swift in Sources */,
+				D24FD27029BA2EE200E7BD18 /* FavoritePrimesAction.swift in Sources */,
+				D24FD25329BA0D6E00E7BD18 /* FavoritePrimesView.swift in Sources */,
+				D24FD24F29BA0C8B00E7BD18 /* PrimeAlert.swift in Sources */,
+				D24FD25B29BA0EAB00E7BD18 /* WolframProvider.swift in Sources */,
+				D2FA2BA029BBB29A0084B627 /* FavoritePrimesReducer.swift in Sources */,
+				D24FD23E29BA0A8E00E7BD18 /* ContentView.swift in Sources */,
+				D226414029C8DF9F00BAD3AA /* EnumKeyPath.swift in Sources */,
+				D24FD26329BA141700E7BD18 /* Store.swift in Sources */,
+				D24FD26A29BA2C4B00E7BD18 /* CounterAction.swift in Sources */,
+				D24FD23C29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift in Sources */,
+				D24FD26829BA182E00E7BD18 /* AppReducer.swift in Sources */,
+				D24FD25529BA0D9A00E7BD18 /* FavoritePrimesState.swift in Sources */,
+				D24FD25729BA0DB100E7BD18 /* AppState+Extensions.swift in Sources */,
+				D24FD25F29BA0EED00E7BD18 /* WolframModel.swift in Sources */,
+				D24FD25129BA0D2800E7BD18 /* IsPrimeModalView.swift in Sources */,
+				D24FD24D29BA0BA500E7BD18 /* CounterView.swift in Sources */,
+				D24FD26629BA180100E7BD18 /* AppAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D24FD24429BA0A9000E7BD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D24FD24529BA0A9000E7BD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D24FD24729BA0A9000E7BD18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tca_reducerpointfree/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL4KR75454;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wutu.tca-reducerpointfree";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D24FD24829BA0A9000E7BD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tca_reducerpointfree/Preview Content\"";
+				DEVELOPMENT_TEAM = ZL4KR75454;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wutu.tca-reducerpointfree";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D24FD23329BA0A8E00E7BD18 /* Build configuration list for PBXProject "tca_reducerpointfree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24FD24429BA0A9000E7BD18 /* Debug */,
+				D24FD24529BA0A9000E7BD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D24FD24629BA0A9000E7BD18 /* Build configuration list for PBXNativeTarget "tca_reducerpointfree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24FD24729BA0A9000E7BD18 /* Debug */,
+				D24FD24829BA0A9000E7BD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D24FD23029BA0A8E00E7BD18 /* Project object */;
+}

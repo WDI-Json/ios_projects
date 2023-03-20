@@ -25,7 +25,7 @@ struct ContentView2: View {
                                 .listRowBackground(
                                     RoundedRectangle(cornerRadius: 24)
                                         .background(.clear)
-                                        .foregroundColor(.red)
+                                        .foregroundColor(.white)
                                         .padding(
                                             EdgeInsets(
                                                 top: 10,
@@ -38,9 +38,8 @@ struct ContentView2: View {
                             }
                         }
                 }
-            }
+            }.navigationTitle("Reservations")
         }
-        .navigationTitle("Reservations")
     }
 }
 
