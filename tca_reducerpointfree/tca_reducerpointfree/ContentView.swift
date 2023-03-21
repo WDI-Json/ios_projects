@@ -27,6 +27,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: Store(initialValue: AppState(), reducer: appReducer))
+        ContentView(
+            store: Store(
+                initialValue: AppState(),
+                reducer: logging(activityFeed(appReducer))
+            )
+        )
     }
 }

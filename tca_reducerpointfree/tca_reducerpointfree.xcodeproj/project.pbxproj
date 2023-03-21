@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D226414029C8DF9F00BAD3AA /* EnumKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */; };
+		D239044D29C9DA7E0019F697 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239044C29C9DA7E0019F697 /* Logging.swift */; };
 		D24FD23C29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */; };
 		D24FD23E29BA0A8E00E7BD18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD23D29BA0A8E00E7BD18 /* ContentView.swift */; };
 		D24FD24029BA0A9000E7BD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D24FD23F29BA0A9000E7BD18 /* Assets.xcassets */; };
@@ -17,8 +18,6 @@
 		D24FD24F29BA0C8B00E7BD18 /* PrimeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */; };
 		D24FD25129BA0D2800E7BD18 /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */; };
 		D24FD25329BA0D6E00E7BD18 /* FavoritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */; };
-		D24FD25529BA0D9A00E7BD18 /* FavoritePrimesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25429BA0D9A00E7BD18 /* FavoritePrimesState.swift */; };
-		D24FD25729BA0DB100E7BD18 /* AppState+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25629BA0DB100E7BD18 /* AppState+Extensions.swift */; };
 		D24FD25929BA0E1A00E7BD18 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */; };
 		D24FD25B29BA0EAB00E7BD18 /* WolframProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */; };
 		D24FD25D29BA0ECD00E7BD18 /* WolframAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */; };
@@ -36,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumKeyPath.swift; sourceTree = "<group>"; };
+		D239044C29C9DA7E0019F697 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 		D24FD23829BA0A8E00E7BD18 /* tca_reducerpointfree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tca_reducerpointfree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tca_reducerpointfreeApp.swift; sourceTree = "<group>"; };
 		D24FD23D29BA0A8E00E7BD18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +46,6 @@
 		D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeAlert.swift; sourceTree = "<group>"; };
 		D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
 		D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesView.swift; sourceTree = "<group>"; };
-		D24FD25429BA0D9A00E7BD18 /* FavoritePrimesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesState.swift; sourceTree = "<group>"; };
-		D24FD25629BA0DB100E7BD18 /* AppState+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppState+Extensions.swift"; sourceTree = "<group>"; };
 		D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframProvider.swift; sourceTree = "<group>"; };
 		D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframAPI.swift; sourceTree = "<group>"; };
@@ -102,6 +100,7 @@
 				D24FD26429BA17F300E7BD18 /* Counter */,
 				D24FD26129BA136B00E7BD18 /* AppState */,
 				D24FD26229BA141700E7BD18 /* Store.swift */,
+				D239044C29C9DA7E0019F697 /* Logging.swift */,
 				D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */,
 				D24FD23F29BA0A9000E7BD18 /* Assets.xcassets */,
 				D24FD24129BA0A9000E7BD18 /* Preview Content */,
@@ -133,7 +132,6 @@
 				D24FD24929BA0AA700E7BD18 /* AppState.swift */,
 				D24FD26529BA180000E7BD18 /* AppAction.swift */,
 				D24FD26729BA182E00E7BD18 /* AppReducer.swift */,
-				D24FD25629BA0DB100E7BD18 /* AppState+Extensions.swift */,
 				D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */,
 			);
 			path = AppState;
@@ -162,7 +160,6 @@
 		D24FD26E29BA2EA000E7BD18 /* FavoritePrimes */ = {
 			isa = PBXGroup;
 			children = (
-				D24FD25429BA0D9A00E7BD18 /* FavoritePrimesState.swift */,
 				D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */,
 				D24FD26F29BA2EE200E7BD18 /* FavoritePrimesAction.swift */,
 				D2FA2B9F29BBB29A0084B627 /* FavoritePrimesReducer.swift */,
@@ -249,6 +246,7 @@
 				D2FA2B9E29BBB2320084B627 /* PrimeModalReducer.swift in Sources */,
 				D24FD25929BA0E1A00E7BD18 /* NumberFormatter.swift in Sources */,
 				D24FD27029BA2EE200E7BD18 /* FavoritePrimesAction.swift in Sources */,
+				D239044D29C9DA7E0019F697 /* Logging.swift in Sources */,
 				D24FD25329BA0D6E00E7BD18 /* FavoritePrimesView.swift in Sources */,
 				D24FD24F29BA0C8B00E7BD18 /* PrimeAlert.swift in Sources */,
 				D24FD25B29BA0EAB00E7BD18 /* WolframProvider.swift in Sources */,
@@ -259,8 +257,6 @@
 				D24FD26A29BA2C4B00E7BD18 /* CounterAction.swift in Sources */,
 				D24FD23C29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift in Sources */,
 				D24FD26829BA182E00E7BD18 /* AppReducer.swift in Sources */,
-				D24FD25529BA0D9A00E7BD18 /* FavoritePrimesState.swift in Sources */,
-				D24FD25729BA0DB100E7BD18 /* AppState+Extensions.swift in Sources */,
 				D24FD25F29BA0EED00E7BD18 /* WolframModel.swift in Sources */,
 				D24FD25129BA0D2800E7BD18 /* IsPrimeModalView.swift in Sources */,
 				D24FD24D29BA0BA500E7BD18 /* CounterView.swift in Sources */,

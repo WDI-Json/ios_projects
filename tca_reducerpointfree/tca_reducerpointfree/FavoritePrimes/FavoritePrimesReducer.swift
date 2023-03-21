@@ -7,14 +7,11 @@
 
 import Foundation
 
-func favoritePrimesReducer(state: inout FavoritePrimesState, action: FavoritePrimesAction) {
+func favoritePrimesReducer(state: inout [Int], action: FavoritePrimesAction) {
     switch action {
     case let .deleteFavoritePrimes(indexSet):
         for index in indexSet {
-            let prime = state.favoritePrimes[index]
-            state.favoritePrimes.remove(at: index)
-            state.activityFeed.append(
-                .init(timestamp: Date(), type: .removedFavoritePrime(prime)))
+            state.remove(at: index)
         }
     }
 }
