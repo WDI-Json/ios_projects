@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum FavoritePrimesAction {
+public enum FavoritePrimesAction {
     case deleteFavoritePrimes(IndexSet)
 }

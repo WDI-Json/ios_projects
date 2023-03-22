@@ -7,7 +7,7 @@
 
 import Foundation
 
-func favoritePrimesReducer(state: inout [Int], action: FavoritePrimesAction) {
+public func favoritePrimesReducer(state: inout [Int], action: FavoritePrimesAction) {
     switch action {
     case let .deleteFavoritePrimes(indexSet):
         for index in indexSet {
@@ -15,4 +15,3 @@ func favoritePrimesReducer(state: inout [Int], action: FavoritePrimesAction) {
         }
     }
 }
-

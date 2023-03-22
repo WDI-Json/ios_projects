@@ -7,7 +7,7 @@
 
 import Foundation
 
-func primeModalReducer(state: inout AppState, action: PrimeModalAction) {
+public func primeModalReducer(state: inout PrimeModalState, action: PrimeModalAction) {
     switch action {
     case .saveFavoritePrimeTapped:
         state.favoritePrimes.append(state.count)

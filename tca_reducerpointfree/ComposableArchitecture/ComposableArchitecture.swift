@@ -1,17 +1,18 @@
 //
-//  Store.swift
-//  tca_reducerpointfree
+//  ComposableArchitecture.swift
+//  ComposableArchitecture
 //
-//  Created by Wouter on 09/03/2023.
+//  Created by Wouter on 22/03/2023.
 //
 
-import Foundation
+import SwiftUI
+import Combine
 
-final class Store<Value, Action>: ObservableObject {
-    let reducer: (inout Value, Action) -> Void
-    @Published private(set) var value: Value
+public final class Store<Value, Action>: ObservableObject {
+    private let reducer: (inout Value, Action) -> Void
+    @Published public private(set) var value: Value
 
-    init(
+    public init(
         initialValue: Value,
         reducer: @escaping (inout Value, Action) -> Void
     ) {
@@ -19,7 +20,7 @@ final class Store<Value, Action>: ObservableObject {
         value = initialValue
     }
 
-    func send(_ action: Action) {
+    public func send(_ action: Action) {
         reducer(&value, action)
     }
 }
@@ -27,7 +28,7 @@ final class Store<Value, Action>: ObservableObject {
 /// combine is a higher-order reducer: it’s a function that takes a number of reducers as input (so long as they work with the same value and action types), and it returns a brand new reducer as output by running each of the given reducers.
 /// - Parameter reducers: <#reducers description#>
 /// - Returns: <#description#>
-func combine<Value, Action>(
+public func combine<Value, Action>(
     _ reducers: (inout Value, Action) -> Void...
 ) -> (inout Value, Action) -> Void {
     return { value, action in
@@ -43,7 +44,7 @@ func combine<Value, Action>(
 ///   - value: <#value description#>
 ///   - action: <#action description#>
 /// - Returns: <#description#>
-func pullback<LocalValue, GlobalValue, LocalAction, GlobalAction>(
+public func pullback<LocalValue, GlobalValue, LocalAction, GlobalAction>(
     _ reducer: @escaping (inout LocalValue, LocalAction) -> Void,
     value: WritableKeyPath<GlobalValue, LocalValue>,
     action: WritableKeyPath<GlobalAction, LocalAction?>
@@ -52,5 +53,17 @@ func pullback<LocalValue, GlobalValue, LocalAction, GlobalAction>(
     return { globalValue, globalAction in
         guard let localAction = globalAction[keyPath: action ] else { return }
         reducer(&globalValue[keyPath: value], localAction)
+    }
+}
+
+public func logging<Value, Action>(
+_ reducer: @escaping (inout Value, Action) -> Void
+) -> (inout Value, Action) -> Void {
+    return { value, action in
+        reducer(&value, action)
+        print("Action: \(action)")
+        print("Value:")
+        dump(value)
+        print("---")
     }
 }

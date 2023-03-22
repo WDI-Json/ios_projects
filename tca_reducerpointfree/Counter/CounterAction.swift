@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CounterAction {
+public enum CounterAction {
     case decrTapped
     case incrTapped
 }

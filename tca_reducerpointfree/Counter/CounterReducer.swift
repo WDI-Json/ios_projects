@@ -7,7 +7,7 @@
 
 import Foundation
 
-func counterReducer(state: inout Int, action: CounterAction) {
+public func counterReducer(state: inout Int, action: CounterAction) {
     switch action {
     case .decrTapped:
         state -= 1

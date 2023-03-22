@@ -6,6 +6,17 @@
 //
 
 import Foundation
+import ComposableArchitecture
+import FavoritePrimes
+import Counter
+import PrimeModal
+
+let _appReducer: (inout AppState, AppAction) -> Void = combine(
+    pullback(counterReducer, value: \.count, action: \.counter),
+    pullback(primeModalReducer, value: \.primeModal, action: \.primeModal),
+    pullback(favoritePrimesReducer, value: \.favoritePrimes, action: \.favoritePrimes)
+)
+let appReducer = pullback(_appReducer, value: \.self, action: \.self)
 
 func activityFeed(
     _ reducer: @escaping (inout AppState, AppAction) -> Void
@@ -33,9 +44,3 @@ func activityFeed(
     }
 }
 
-let _appReducer: (inout AppState, AppAction) -> Void = combine(
-    pullback(counterReducer, value: \.count, action: \.counter),
-    pullback(primeModalReducer, value: \.self, action: \.primeModal),
-    pullback(favoritePrimesReducer, value: \.favoritePrimes, action: \.favoritePrimes)
-)
-let appReducer = pullback(_appReducer, value: \.self, action: \.self)
