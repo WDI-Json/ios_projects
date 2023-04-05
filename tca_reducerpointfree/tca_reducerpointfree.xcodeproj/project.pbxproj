@@ -163,6 +163,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D2234E2929DDBEAB0094F1C2 /* PrimeTime.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrimeTime.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D226413F29C8DF9F00BAD3AA /* EnumKeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumKeyPath.swift; sourceTree = "<group>"; };
 		D24FD23829BA0A8E00E7BD18 /* tca_reducerpointfree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tca_reducerpointfree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tca_reducerpointfreeApp.swift; sourceTree = "<group>"; };
@@ -289,6 +290,7 @@
 		D24FD22F29BA0A8E00E7BD18 = {
 			isa = PBXGroup;
 			children = (
+				D2234E2929DDBEAB0094F1C2 /* PrimeTime.playground */,
 				D24FD23A29BA0A8E00E7BD18 /* tca_reducerpointfree */,
 				D2FD859429CB3FB0005B261E /* Counter */,
 				D2FD85A229CB3FB0005B261E /* CounterTests */,
