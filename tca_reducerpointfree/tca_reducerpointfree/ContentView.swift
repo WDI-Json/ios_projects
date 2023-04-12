@@ -7,6 +7,7 @@
 import Foundation
 import SwiftUI
 import ComposableArchitecture
+import FavoritePrimes
 
 struct ContentView: View {
     @ObservedObject var store: Store<AppState, AppAction>
@@ -16,13 +17,21 @@ struct ContentView: View {
             List {
                 NavigationLink(destination:
                                 CounterView(
-                                    store: self.store.view {($0.count, $0.favoritePrimes)}
-                                           )
+                                    store: self.store
+                                        .view(
+                                            value: { ($0.count, $0.favoritePrimes) },
+                                            action: { $0 }
+                                        )
+                                )
                 ) {
                     Text("Counter demo")
                 }
                 NavigationLink(destination: FavoritePrimesView(
-                    store: self.store.view({ $0.favoritePrimes }))
+                    store: self.store
+                        .view(
+                            value: { $0.favoritePrimes },
+                            action: { .favoritePrimes($0) }
+                        ))
                 ) {
                     Text("Favorite primes")
                 }

@@ -36,7 +36,11 @@ struct CounterView: View {
         .sheet(isPresented: self.$isPrimeModalShown) {
             IsPrimeModalView(
                 // if you have issues change back to typealias
-                store: self.store.view{ PrimeModalState(count: $0.count, favoritePrimes: $0.favoritePrimes) }
+                store: self.store
+                    .view(
+                        value: { PrimeModalState(count: $0.count, favoritePrimes: $0.favoritePrimes) },
+                        action: {.primeModal($0)}
+                        )
             )
         }
         .alert(item: self.$alertNthPrime) { alert in
@@ -62,8 +66,8 @@ private func ordinal(_ n: Int) -> String {
     return formatter.string(for: n) ?? ""
 }
 
-struct CounterView_Previews: PreviewProvider {
-    static var previews: some View {
-        CounterView(store: Store(initialValue: AppState(), reducer: appReducer))
-    }
-}
+//struct CounterView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CounterView(store: Store(initialValue: AppState(), reducer: appReducer))
+//    }
+//}

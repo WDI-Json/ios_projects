@@ -15,14 +15,14 @@
 		D24FD24A29BA0AA700E7BD18 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24929BA0AA700E7BD18 /* AppState.swift */; };
 		D24FD24D29BA0BA500E7BD18 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24C29BA0BA500E7BD18 /* CounterView.swift */; };
 		D24FD24F29BA0C8B00E7BD18 /* PrimeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */; };
-		D24FD25129BA0D2800E7BD18 /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */; };
-		D24FD25329BA0D6E00E7BD18 /* FavoritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */; };
-		D24FD25929BA0E1A00E7BD18 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */; };
-		D24FD25B29BA0EAB00E7BD18 /* WolframProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */; };
-		D24FD25D29BA0ECD00E7BD18 /* WolframAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */; };
-		D24FD25F29BA0EED00E7BD18 /* WolframModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25E29BA0EED00E7BD18 /* WolframModel.swift */; };
 		D24FD26629BA180100E7BD18 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26529BA180000E7BD18 /* AppAction.swift */; };
 		D24FD26829BA182E00E7BD18 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD26729BA182E00E7BD18 /* AppReducer.swift */; };
+		D258021229E6F43F00DA3060 /* FavoritePrimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258021129E6F43F00DA3060 /* FavoritePrimesView.swift */; };
+		D258021429E6F61700DA3060 /* IsPrimeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258021329E6F61700DA3060 /* IsPrimeModalView.swift */; };
+		D258021529E6F66C00DA3060 /* IsPrimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24FD25829BA0E1A00E7BD18 /* IsPrimeHelper.swift */; };
+		D258021A29E6F76D00DA3060 /* WolframModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258021729E6F76D00DA3060 /* WolframModel.swift */; };
+		D258021B29E6F76D00DA3060 /* WolframProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258021829E6F76D00DA3060 /* WolframProvider.swift */; };
+		D258021C29E6F76D00DA3060 /* WolframAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258021929E6F76D00DA3060 /* WolframAPI.swift */; };
 		D2FD859729CB3FB0005B261E /* Counter.docc in Sources */ = {isa = PBXBuildFile; fileRef = D2FD859629CB3FB0005B261E /* Counter.docc */; };
 		D2FD859D29CB3FB0005B261E /* Counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FD859329CB3FB0005B261E /* Counter.framework */; };
 		D2FD85A429CB3FB0005B261E /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD85A329CB3FB0005B261E /* CounterTests.swift */; };
@@ -173,17 +173,17 @@
 		D24FD24929BA0AA700E7BD18 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		D24FD24C29BA0BA500E7BD18 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeAlert.swift; sourceTree = "<group>"; };
-		D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
-		D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesView.swift; sourceTree = "<group>"; };
-		D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
-		D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframProvider.swift; sourceTree = "<group>"; };
-		D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframAPI.swift; sourceTree = "<group>"; };
-		D24FD25E29BA0EED00E7BD18 /* WolframModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframModel.swift; sourceTree = "<group>"; };
+		D24FD25829BA0E1A00E7BD18 /* IsPrimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeHelper.swift; sourceTree = "<group>"; };
 		D24FD26529BA180000E7BD18 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		D24FD26729BA182E00E7BD18 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		D24FD26929BA2C4B00E7BD18 /* CounterAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
 		D24FD26B29BA2C5500E7BD18 /* PrimeModalAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeModalAction.swift; sourceTree = "<group>"; };
 		D24FD26F29BA2EE200E7BD18 /* FavoritePrimesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesAction.swift; sourceTree = "<group>"; };
+		D258021129E6F43F00DA3060 /* FavoritePrimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesView.swift; sourceTree = "<group>"; };
+		D258021329E6F61700DA3060 /* IsPrimeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPrimeModalView.swift; sourceTree = "<group>"; };
+		D258021729E6F76D00DA3060 /* WolframModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolframModel.swift; sourceTree = "<group>"; };
+		D258021829E6F76D00DA3060 /* WolframProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolframProvider.swift; sourceTree = "<group>"; };
+		D258021929E6F76D00DA3060 /* WolframAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolframAPI.swift; sourceTree = "<group>"; };
 		D2FA2B9B29BBB22C0084B627 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
 		D2FA2B9D29BBB2320084B627 /* PrimeModalReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeModalReducer.swift; sourceTree = "<group>"; };
 		D2FA2B9F29BBB29A0084B627 /* FavoritePrimesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePrimesReducer.swift; sourceTree = "<group>"; };
@@ -323,12 +323,9 @@
 		D24FD23A29BA0A8E00E7BD18 /* tca_reducerpointfree */ = {
 			isa = PBXGroup;
 			children = (
+				D258021629E6F76D00DA3060 /* Wolfram */,
 				D24FD23B29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift */,
 				D24FD23D29BA0A8E00E7BD18 /* ContentView.swift */,
-				D24FD26029BA0EF400E7BD18 /* Wolfram */,
-				D24FD25829BA0E1A00E7BD18 /* NumberFormatter.swift */,
-				D24FD26E29BA2EA000E7BD18 /* FavoritePrimes */,
-				D24FD26D29BA2C5E00E7BD18 /* PrimeModal */,
 				D24FD26429BA17F300E7BD18 /* Counter */,
 				D24FD26129BA136B00E7BD18 /* AppState */,
 				D24FD24E29BA0C8B00E7BD18 /* PrimeAlert.swift */,
@@ -344,16 +341,6 @@
 				D24FD24229BA0A9000E7BD18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D24FD26029BA0EF400E7BD18 /* Wolfram */ = {
-			isa = PBXGroup;
-			children = (
-				D24FD25A29BA0EAB00E7BD18 /* WolframProvider.swift */,
-				D24FD25C29BA0ECD00E7BD18 /* WolframAPI.swift */,
-				D24FD25E29BA0EED00E7BD18 /* WolframModel.swift */,
-			);
-			path = Wolfram;
 			sourceTree = "<group>";
 		};
 		D24FD26129BA136B00E7BD18 /* AppState */ = {
@@ -376,20 +363,14 @@
 			path = Counter;
 			sourceTree = "<group>";
 		};
-		D24FD26D29BA2C5E00E7BD18 /* PrimeModal */ = {
+		D258021629E6F76D00DA3060 /* Wolfram */ = {
 			isa = PBXGroup;
 			children = (
-				D24FD25029BA0D2800E7BD18 /* IsPrimeModalView.swift */,
+				D258021729E6F76D00DA3060 /* WolframModel.swift */,
+				D258021829E6F76D00DA3060 /* WolframProvider.swift */,
+				D258021929E6F76D00DA3060 /* WolframAPI.swift */,
 			);
-			path = PrimeModal;
-			sourceTree = "<group>";
-		};
-		D24FD26E29BA2EA000E7BD18 /* FavoritePrimes */ = {
-			isa = PBXGroup;
-			children = (
-				D24FD25229BA0D6E00E7BD18 /* FavoritePrimesView.swift */,
-			);
-			path = FavoritePrimes;
+			path = Wolfram;
 			sourceTree = "<group>";
 		};
 		D2FD859429CB3FB0005B261E /* Counter */ = {
@@ -417,6 +398,7 @@
 				D2FD85B829CB3FC1005B261E /* FavoritePrimes.h */,
 				D24FD26F29BA2EE200E7BD18 /* FavoritePrimesAction.swift */,
 				D2FA2B9F29BBB29A0084B627 /* FavoritePrimesReducer.swift */,
+				D258021129E6F43F00DA3060 /* FavoritePrimesView.swift */,
 				D2FD85B929CB3FC1005B261E /* FavoritePrimes.docc */,
 			);
 			path = FavoritePrimes;
@@ -433,11 +415,13 @@
 		D2FD85D929CB3FE0005B261E /* PrimeModal */ = {
 			isa = PBXGroup;
 			children = (
+				D24FD25829BA0E1A00E7BD18 /* IsPrimeHelper.swift */,
 				D24FD26B29BA2C5500E7BD18 /* PrimeModalAction.swift */,
 				D2FA2B9D29BBB2320084B627 /* PrimeModalReducer.swift */,
 				D2FD862129CB4324005B261E /* PrimeModalState.swift */,
 				D2FD85DA29CB3FE0005B261E /* PrimeModal.h */,
 				D2FD85DB29CB3FE0005B261E /* PrimeModal.docc */,
+				D258021329E6F61700DA3060 /* IsPrimeModalView.swift */,
 			);
 			path = PrimeModal;
 			sourceTree = "<group>";
@@ -820,19 +804,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D258021A29E6F76D00DA3060 /* WolframModel.swift in Sources */,
+				D258021C29E6F76D00DA3060 /* WolframAPI.swift in Sources */,
 				D24FD24A29BA0AA700E7BD18 /* AppState.swift in Sources */,
-				D24FD25D29BA0ECD00E7BD18 /* WolframAPI.swift in Sources */,
-				D24FD25929BA0E1A00E7BD18 /* NumberFormatter.swift in Sources */,
-				D24FD25329BA0D6E00E7BD18 /* FavoritePrimesView.swift in Sources */,
 				D24FD24F29BA0C8B00E7BD18 /* PrimeAlert.swift in Sources */,
-				D24FD25B29BA0EAB00E7BD18 /* WolframProvider.swift in Sources */,
 				D24FD23E29BA0A8E00E7BD18 /* ContentView.swift in Sources */,
+				D258021B29E6F76D00DA3060 /* WolframProvider.swift in Sources */,
 				D2FD862429CB43E4005B261E /* AppState+Extensions.swift in Sources */,
 				D226414029C8DF9F00BAD3AA /* EnumKeyPath.swift in Sources */,
 				D24FD23C29BA0A8E00E7BD18 /* tca_reducerpointfreeApp.swift in Sources */,
 				D24FD26829BA182E00E7BD18 /* AppReducer.swift in Sources */,
-				D24FD25F29BA0EED00E7BD18 /* WolframModel.swift in Sources */,
-				D24FD25129BA0D2800E7BD18 /* IsPrimeModalView.swift in Sources */,
 				D24FD24D29BA0BA500E7BD18 /* CounterView.swift in Sources */,
 				D24FD26629BA180100E7BD18 /* AppAction.swift in Sources */,
 			);
@@ -862,6 +843,7 @@
 			files = (
 				D2FD861C29CB41E9005B261E /* FavoritePrimesReducer.swift in Sources */,
 				D2FD85BA29CB3FC1005B261E /* FavoritePrimes.docc in Sources */,
+				D258021229E6F43F00DA3060 /* FavoritePrimesView.swift in Sources */,
 				D2FD861B29CB41E9005B261E /* FavoritePrimesAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,8 +860,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D258021429E6F61700DA3060 /* IsPrimeModalView.swift in Sources */,
 				D2FD85DC29CB3FE0005B261E /* PrimeModal.docc in Sources */,
 				D2FD862029CB42D2005B261E /* PrimeModalReducer.swift in Sources */,
+				D258021529E6F66C00DA3060 /* IsPrimeHelper.swift in Sources */,
 				D2FD861F29CB42D2005B261E /* PrimeModalAction.swift in Sources */,
 				D2FD862229CB4324005B261E /* PrimeModalState.swift in Sources */,
 			);
